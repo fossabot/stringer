@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/stories/mark_all_as_read"
+require "rails_helper"
 
 describe MarkAllAsRead do
   describe "#mark_as_read" do

@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/stories/mark_as_unstarred"
+require "rails_helper"
 
 describe MarkAsUnstarred do
   describe "#mark_as_unstarred" do

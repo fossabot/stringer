@@ -1,5 +1,3 @@
-require_relative "../../repositories/story_repository"
-
 class MarkAsStarred
   def initialize(story_id, repository = StoryRepository)
     @story_id = story_id

@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/stories/mark_group_as_read"
+require "rails_helper"
 
 describe MarkGroupAsRead do
   describe '#mark_group_as_read' do

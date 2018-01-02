@@ -1,5 +1,3 @@
-require_relative "../../repositories/story_repository"
-
 class MarkGroupAsRead
   KINDLING_GROUP_ID = 0
   SPARKS_GROUP_ID   = -1

@@ -1,5 +1,3 @@
-require_relative "../../repositories/story_repository"
-
 class MarkFeedAsRead
   def initialize(feed_id, timestamp, repository = StoryRepository)
     @feed_id   = feed_id.to_i

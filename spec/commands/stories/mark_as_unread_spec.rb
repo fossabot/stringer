@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/stories/mark_as_unread"
+require "rails_helper"
 
 describe MarkAsUnread do
   describe "#mark_as_unread" do

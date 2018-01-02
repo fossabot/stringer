@@ -1,5 +1,3 @@
-require_relative "../../repositories/story_repository"
-
 class MarkAllAsRead
   def initialize(story_ids, repository = StoryRepository)
     @story_ids = story_ids
