@@ -281,7 +281,7 @@ DEPENDENCIES
   rails (~> 5.2.0.beta2)
   rspec-html-matchers (~> 0.7)
   rspec-rails
-  rubocop (~> 0.38)
+  rubocop
   sass-rails (~> 5.0)
   shotgun (~> 0.9)
   spring

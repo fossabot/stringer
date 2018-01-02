@@ -43,6 +43,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rubocop', require: false
 end
 
 group :development, :test do
@@ -53,7 +54,6 @@ group :development, :test do
   gem "coveralls", "~> 0.7", require: false
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
-  gem "rubocop", "~> 0.38", require: false
   gem "shotgun", "~> 0.9"
   gem "timecop", "~> 0.8"
 end
