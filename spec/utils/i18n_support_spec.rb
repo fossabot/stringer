@@ -1,6 +1,6 @@
-require "spec_helper"
+require "rails_helper"
 
-describe "i18n" do
+xdescribe "i18n" do
   before do
     allow(UserRepository).to receive(:setup_complete?).and_return(false)
     ENV["LOCALE"] = locale

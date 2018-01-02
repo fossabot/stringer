@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "utils/feed_discovery"
+require "rails_helper"
 
 describe FeedDiscovery do
   let(:finder) { double }

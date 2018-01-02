@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "utils/opml_parser"
+require "rails_helper"
 
 describe OpmlParser do
   let(:parser) { OpmlParser.new }
