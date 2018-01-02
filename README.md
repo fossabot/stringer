@@ -23,7 +23,7 @@ Stringer is a Ruby (2.3.0+) app based on Sinatra, ActiveRecord, PostgreSQL, Back
 
 Stringer will run just fine on the Heroku free plan.
 
-Instructions are provided for deploying to [Heroku manually](/docs/Heroku.md), to any Ruby 
+Instructions are provided for deploying to [Heroku manually](/docs/Heroku.md), to any Ruby
 compatible [Linux-based VPS](/docs/VPS.md), to [Docker](docs/docker.md) and to [OpenShift](/docs/OpenShift.md).
 
 ## Niceties
@@ -111,7 +111,7 @@ foreman start
 
 The application will be running on port `5000`.
 
-You can launch an interactive console (a la `rails c`) using `racksh`.
+You can launch an interactive console (a la `rails console`) using `racksh`.
 
 ## Acknowledgements
 
