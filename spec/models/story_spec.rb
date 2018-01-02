@@ -1,7 +1,4 @@
-require "spec_helper"
-require "support/active_record"
-
-app_require "models/story"
+require "rails_helper"
 
 describe "Story" do
   let(:story) do
