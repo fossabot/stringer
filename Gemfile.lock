@@ -248,7 +248,6 @@ DEPENDENCIES
   rspec (~> 3.4)
   rspec-html-matchers (~> 0.7)
   rubocop (~> 0.38)
-  sass
   sass-rails (~> 5.0)
   shotgun (~> 0.9)
   thread (~> 0.2)
