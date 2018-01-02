@@ -1,4 +1,4 @@
-class Feed < ActiveRecord::Base
+class Feed < ApplicationRecord
   has_many :stories, -> { order "published desc" }, dependent: :delete_all
   belongs_to :group
 
