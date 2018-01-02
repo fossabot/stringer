@@ -57,12 +57,10 @@ group :development, :test do
 end
 
 # gem "activerecord", "~> 4.2.10"
-# gem "bcrypt", "~> 3.1"
 gem "delayed_job", "~> 4.1"
 gem "delayed_job_active_record", "~> 4.1"
 gem "feedbag", "~> 0.9.5"
 gem "feedjira", "~> 2.1.0"
-gem "i18n"
 gem "loofah", "~> 2.0"
 gem "nokogiri", "~> 1.6", ">= 1.6.7.2"
 gem "rack-protection", "~> 1.5"
@@ -76,5 +74,4 @@ gem "rake", "~> 10.1", ">= 10.1.1"
 # gem "sprockets", "~> 3.0"
 # gem "sprockets-helpers"
 gem "thread", "~> 0.2"
-# gem "uglifier"
 gem "will_paginate", "~> 3.1"

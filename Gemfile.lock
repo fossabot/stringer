@@ -269,7 +269,6 @@ DEPENDENCIES
   faker (~> 1.2)
   feedbag (~> 0.9.5)
   feedjira (~> 2.1.0)
-  i18n
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   loofah (~> 2.0)
