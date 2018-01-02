@@ -1,5 +1,3 @@
-require_relative "../../models/user"
-
 class SignInUser
   def self.sign_in(submitted_password, repository = User)
     user = repository.first

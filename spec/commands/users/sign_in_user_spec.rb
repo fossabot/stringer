@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/users/sign_in_user"
+require "rails_helper"
 
 describe SignInUser do
   let(:valid_password) { "valid-pw" }

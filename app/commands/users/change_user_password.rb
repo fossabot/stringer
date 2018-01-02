@@ -1,6 +1,3 @@
-require_relative "../../repositories/user_repository"
-require_relative "../../utils/api_key"
-
 class ChangeUserPassword
   def initialize(repository = UserRepository)
     @repo = repository

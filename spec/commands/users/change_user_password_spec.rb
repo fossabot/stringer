@@ -1,7 +1,4 @@
-require "spec_helper"
-require "support/active_record"
-
-app_require "commands/users/change_user_password"
+require "rails_helper"
 
 describe ChangeUserPassword do
   let(:repo) { double }

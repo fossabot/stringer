@@ -1,5 +1,3 @@
-require_relative "../../utils/api_key"
-
 class CreateUser
   def initialize(repository = User)
     @repo = repository

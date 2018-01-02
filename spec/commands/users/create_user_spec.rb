@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/users/create_user"
+require "rails_helper"
 
 describe CreateUser do
   let(:repo) { double }

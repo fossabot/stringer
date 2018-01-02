@@ -1,8 +1,6 @@
-require "spec_helper"
+require "rails_helper"
 
-app_require "commands/users/complete_setup"
-
-describe CompleteSetup do
+xdescribe CompleteSetup do
   let(:user) { UserFactory.build }
   it "marks setup as complete" do
     expect(user).to receive(:save).once
