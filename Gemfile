@@ -8,7 +8,6 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.11'
 
 group :production do
-  gem "unicorn", "~> 4.7"
 end
 
 group :development do
