@@ -44,12 +44,14 @@ group :development do
 end
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'faker'
+
   gem "capybara", "~> 2.6"
   gem "coveralls", "~> 0.7", require: false
-  gem "faker", "~> 1.2"
   gem "pry-byebug", "~> 1.2"
   gem "rack-test", "~> 0.6"
-  gem "rspec", "~> 3.4"
+  # gem "rspec", "~> 3.4"
   gem "rspec-html-matchers", "~> 0.7"
   gem "rubocop", "~> 0.38", require: false
   gem "shotgun", "~> 0.9"
