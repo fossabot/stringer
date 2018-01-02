@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "repositories/story_repository"
+require "rails_helper"
 
 describe StoryRepository do
   describe ".add" do

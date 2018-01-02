@@ -1,7 +1,4 @@
-require "spec_helper"
-require "support/active_record"
-
-app_require "repositories/feed_repository"
+require "rails_helper"
 
 describe FeedRepository do
   describe ".update_last_fetched" do

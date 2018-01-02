@@ -1,5 +1,3 @@
-require_relative "../models/feed"
-
 class FeedRepository
   MIN_YEAR = 1970
 
