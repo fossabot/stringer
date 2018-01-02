@@ -51,7 +51,6 @@ group :development, :test do
 
   gem "capybara", "~> 2.6"
   gem "coveralls", "~> 0.7", require: false
-  gem "pry-byebug", "~> 1.2"
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
   gem "rubocop", "~> 0.38", require: false
