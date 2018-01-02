@@ -1,0 +1,13 @@
+require bootstrap-affix.js # not required by default
+require bootstrap-alert.js
+require bootstrap-button.js
+require bootstrap-carousel.js # not required by default
+require bootstrap-collapse.js
+require bootstrap-dropdown.js # not required by default
+require bootstrap-modal.js
+require bootstrap-popover.js
+require bootstrap-scrollspy.js # not required by default
+require bootstrap-tab.js # not required by default
+require bootstrap-tooltip.js
+require bootstrap-transition.js
+require bootstrap-typeahead.js
