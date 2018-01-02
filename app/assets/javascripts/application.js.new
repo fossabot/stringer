@@ -11,3 +11,28 @@ require bootstrap-tab.js # not required by default
 require bootstrap-tooltip.js
 require bootstrap-transition.js
 require bootstrap-typeahead.js
+
+
+// bootstrap-affix.js not required by default
+//= require bootstrap-affix.js
+//= require bootstrap-alert.js
+//= require bootstrap-button.js
+// bootstrap-carousel.js not required by default
+//= require bootstrap-carousel.js
+//= require bootstrap-collapse.js
+// bootstrap-dropdown.js not required by default
+//= require bootstrap-dropdown.js
+//= require bootstrap-modal.js
+//= require bootstrap-popover.js
+// bootstrap-scrollspy.js not required by default
+//= require bootstrap-scrollspy.js
+// bootstrap-tab.js not required by default
+//= require bootstrap-tab.js
+//= require bootstrap-tooltip.js
+//= require bootstrap-transition.js
+//= require bootstrap-typeahead.js
+//= require bootstrap.file-input.js
+//= require mousetrap.js
+//= require jquery.visible.js
+//= require underscore.js
+//= require backbone.js
