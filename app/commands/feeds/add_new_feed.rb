@@ -1,6 +1,3 @@
-require_relative "../../models/feed"
-require_relative "../../utils/feed_discovery"
-
 class AddNewFeed
   ONE_DAY = 24 * 60 * 60
 

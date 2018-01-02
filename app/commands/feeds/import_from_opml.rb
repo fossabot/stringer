@@ -1,7 +1,3 @@
-require_relative "../../models/feed"
-require_relative "../../models/group"
-require_relative "../../utils/opml_parser"
-
 class ImportFromOpml
   ONE_DAY = 24 * 60 * 60
 

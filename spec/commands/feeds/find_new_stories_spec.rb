@@ -1,7 +1,4 @@
-require "spec_helper"
-
-app_require "repositories/story_repository"
-app_require "commands/feeds/find_new_stories"
+require "rails_helper"
 
 describe FindNewStories do
   describe "#new_stories" do

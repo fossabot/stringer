@@ -1,5 +1,3 @@
-require_relative "../../repositories/story_repository"
-
 class FindNewStories
   STORY_AGE_THRESHOLD_DAYS = 3
 

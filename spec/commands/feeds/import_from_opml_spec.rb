@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/feeds/import_from_opml"
+require "rails_helper"
 
 describe ImportFromOpml do
   let(:subscriptions) { File.open(File.expand_path("../../../support/files/subscriptions.xml", __FILE__)) }

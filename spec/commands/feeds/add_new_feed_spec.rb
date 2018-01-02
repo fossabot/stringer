@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "/commands/feeds/add_new_feed"
+require "rails_helper"
 
 describe AddNewFeed do
   describe "#add" do

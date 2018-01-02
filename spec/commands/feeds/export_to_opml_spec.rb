@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "commands/feeds/export_to_opml"
+require "rails_helper"
 
 describe ExportToOpml do
   describe "#to_xml" do
