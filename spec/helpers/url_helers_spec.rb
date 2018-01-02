@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "helpers/url_helpers"
+require "rails_helper"
 
 RSpec.describe UrlHelpers do
   class Helper
