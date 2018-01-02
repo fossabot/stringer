@@ -2,9 +2,10 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0.beta2'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18'
 
 group :production do
-  gem "pg", "~> 0.18.4"
   gem "unicorn", "~> 4.7"
 end
 

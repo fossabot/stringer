@@ -235,7 +235,7 @@ DEPENDENCIES
   i18n
   loofah (~> 2.0)
   nokogiri (~> 1.6, >= 1.6.7.2)
-  pg (~> 0.18.4)
+  pg (~> 0.18)
   pry-byebug (~> 1.2)
   rack-protection (~> 1.5)
   rack-ssl (~> 1.4)
