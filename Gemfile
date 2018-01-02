@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 5.2.0.beta2'
+
 group :production do
   gem "pg", "~> 0.18.4"
   gem "unicorn", "~> 4.7"
@@ -22,7 +25,7 @@ group :development, :test do
   gem "timecop", "~> 0.8"
 end
 
-gem "activerecord", "~> 4.2.10"
+# gem "activerecord", "~> 4.2.10"
 gem "bcrypt", "~> 3.1"
 gem "delayed_job", "~> 4.1"
 gem "delayed_job_active_record", "~> 4.1"
@@ -36,12 +39,12 @@ gem "rack-ssl", "~> 1.4"
 gem "racksh", "~> 1.0"
 gem "rake", "~> 10.1", ">= 10.1.1"
 gem "sass"
-gem "sinatra", "~> 1.4.8", ">= 1.4.8"
-gem "sinatra-activerecord", "~> 1.2", ">= 1.2.3"
-gem "sinatra-contrib", "~> 1.4.7"
-gem "sinatra-flash", "~> 0.3"
-gem "sprockets", "~> 3.0"
-gem "sprockets-helpers"
+# gem "sinatra", "~> 1.4.8", ">= 1.4.8"
+# gem "sinatra-activerecord", "~> 1.2", ">= 1.2.3"
+# gem "sinatra-contrib", "~> 1.4.7"
+# gem "sinatra-flash", "~> 0.3"
+# gem "sprockets", "~> 3.0"
+# gem "sprockets-helpers"
 gem "thread", "~> 0.2"
-gem "uglifier"
+# gem "uglifier"
 gem "will_paginate", "~> 3.1"
