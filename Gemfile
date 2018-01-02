@@ -33,6 +33,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'pry-rails'
+
 group :production do
 end
 
@@ -51,7 +53,6 @@ group :development, :test do
   gem "coveralls", "~> 0.7", require: false
   gem "pry-byebug", "~> 1.2"
   gem "rack-test", "~> 0.6"
-  # gem "rspec", "~> 3.4"
   gem "rspec-html-matchers", "~> 0.7"
   gem "rubocop", "~> 0.38", require: false
   gem "shotgun", "~> 0.9"
