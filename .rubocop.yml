@@ -1,31 +1,8 @@
-inherit_from: .rubocop_todo.yml
+require: rubocop-thread_safety
+require: rubocop-rspec
 
-AllCops:
-  Exclude:
-    - 'db/schema.rb'
-    - 'vendor/**/*'
-  TargetRubyVersion: 2.3
-
-Metrics/LineLength:
-  Max: 120
-
-Metrics/MethodLength:
-  Max: 15
-
-Style/Documentation:
-  Enabled: false
-
-Style/DoubleNegation:
-  Enabled: false
-
-#Style/IfUnlessModifier:
-#  MaxLineLength: 120
-
-Style/NumericLiterals:
-  Enabled: false
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-#Style/WhileUntilModifier:
-#  MaxLineLength: 120
+inherit_from:
+  - .rubocop_general.yml
+  - .rubocop_rspec.yml
+  - .rubocop-thread_safety.yml
+  - .rubocop_todo.yml
