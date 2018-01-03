@@ -18,8 +18,8 @@ Style/Documentation:
 Style/DoubleNegation:
   Enabled: false
 
-Style/IfUnlessModifier:
-  MaxLineLength: 120
+#Style/IfUnlessModifier:
+#  MaxLineLength: 120
 
 Style/NumericLiterals:
   Enabled: false
@@ -27,5 +27,5 @@ Style/NumericLiterals:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-Style/WhileUntilModifier:
-  MaxLineLength: 120
+#Style/WhileUntilModifier:
+#  MaxLineLength: 120
