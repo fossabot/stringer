@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
 
+  resource :heroku, only: :show
+
   root to: 'home#index'
 end
