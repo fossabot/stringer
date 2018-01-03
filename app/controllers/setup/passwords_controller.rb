@@ -14,7 +14,7 @@ module Setup
         user = CreateUser.new.create(params[:password])
         session[:user_id] = user.id
 
-        redirect_to '/feeds/import'
+        redirect_to feeds_import_path
       end
     end
 

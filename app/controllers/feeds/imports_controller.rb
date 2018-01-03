@@ -4,6 +4,9 @@ module Feeds
     end
 
     def create
+      ::ImportFromOpml.import(params[:opml_file])
+
+      redirect_to setup_tutorial_path
     end
   end
 end
