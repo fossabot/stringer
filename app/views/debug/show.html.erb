@@ -1,0 +1,11 @@
+<div id="debug">
+  <h1>Debug Information</h1>
+  <dl>
+    <dt>Ruby Version</dt>
+    <dd><%= RUBY_VERSION %></dd>
+    <dt>User Agent</dt>
+    <dd><%= request.user_agent %></dd>
+    <dt>Queued Jobs</dt>
+    <dd><%= @queued_jobs_count %></dd>
+  </dl>
+</div>

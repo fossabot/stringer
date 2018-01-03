@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   resource :heroku, only: :show
 
+  resource :debug, only: :show
+
   root to: 'home#index'
 end
