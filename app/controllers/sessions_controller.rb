@@ -22,6 +22,6 @@ class SessionsController < ApplicationController
     flash[:success] = t('sessions.destroy.flash.logged_out_successfully')
     session[:user_id] = nil
 
-    redirect_to root_url
+    redirect_to root_path
   end
 end
