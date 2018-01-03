@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resource :tutorial, only: :show
   end
 
-  resources :feeds, only: [:index, :edit, :update, :destroy]
+  resources :feeds, only: [:index, :new, :create, :edit, :update, :destroy]
 
   namespace :feeds do
     resource :import, only: [:show, :create]
