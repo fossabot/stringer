@@ -68,7 +68,6 @@ gem "feedbag", "~> 0.9.5"
 gem "feedjira", "~> 2.1.0"
 gem "loofah", "~> 2.0"
 gem "rack-protection", "~> 1.5"
-gem "rack-ssl", "~> 1.4"
 gem "thread", "~> 0.2"
 gem "will_paginate", "~> 3.1"
 
