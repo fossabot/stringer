@@ -33,6 +33,7 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'nokogiri'
 gem 'pry-rails'
 gem 'dotenv-rails'
 
@@ -66,7 +67,6 @@ gem "delayed_job_active_record", "~> 4.1"
 gem "feedbag", "~> 0.9.5"
 gem "feedjira", "~> 2.1.0"
 gem "loofah", "~> 2.0"
-gem "nokogiri", "~> 1.6", ">= 1.6.7.2"
 gem "rack-protection", "~> 1.5"
 gem "rack-ssl", "~> 1.4"
 gem "thread", "~> 0.2"
