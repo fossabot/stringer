@@ -3,7 +3,7 @@
 </div>
 
 <% unless @read_stories.empty? %>
-  <%= render_js :stories, { stories: @read_stories } %>
+  <%= render 'stories.js', stories: @read_stories %>
 
   <div id="stories">
     <ul id="story-list">
