@@ -535,34 +535,34 @@ li.feed .remove-feed a:hover {
 #mark-all-instruction {
   left: -100px;
   top: 20px;
-  background: url("/img/arrow-up-right.png") no-repeat top left 30px;
+  background: image-url("arrow-up-right.png") no-repeat top left 30px;
   padding-top: 30px;
 }
 
 #refresh-instruction {
   left: 50px;
   top: 25px;
-  background: url("/img/arrow-left.png") no-repeat top left 30px;
+  background: image-url("arrow-left.png") no-repeat top left 30px;
   padding-left: 75px;
 }
 
 #feeds-instruction {
   top: 28px;
   left: 500px;
-  background: url("/img/arrow-right.png") no-repeat top left 105px;
+  background: image-url("arrow-right.png") no-repeat top left 105px;
 }
 
 #add-feed-instruction {
   top: 27px;
   left: 735px;
-  background: url("/img/arrow-up-left.png") no-repeat top left;
+  background: image-url("arrow-up-left.png") no-repeat top left;
   padding-top: 30px;
 }
 
 #story-instruction {
   left: 200px;
   top: 190px;
-  background: url("/img/arrow-right-up.png") no-repeat top left 150px;
+  background: image-url("arrow-right-up.png") no-repeat top left 150px;
   padding-top: 10px;
 }
 
