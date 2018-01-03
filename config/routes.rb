@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resource :setup_password, only: [:show, :create]
+  namespace :setup do
+    resource :password, only: [:show, :create]
+  end
 
   resource :session, only: [:new, :create, :destroy]
 
