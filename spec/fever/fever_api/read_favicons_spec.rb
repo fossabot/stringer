@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/read_favicons"
+require "rails_helper"
 
 describe FeverAPI::ReadFavicons do
   subject { FeverAPI::ReadFavicons.new }

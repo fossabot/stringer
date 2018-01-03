@@ -1,5 +1,3 @@
-require_relative "../repositories/story_repository"
-
 module FeverAPI
   class SyncSavedItemIds
     def initialize(options = {})

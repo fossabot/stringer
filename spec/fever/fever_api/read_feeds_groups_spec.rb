@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/read_feeds_groups"
+require "rails_helper"
 
 describe FeverAPI::ReadFeedsGroups do
   let(:feed_ids) { [5, 7, 11] }

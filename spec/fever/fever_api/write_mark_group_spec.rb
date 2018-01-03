@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/write_mark_group"
+require "rails_helper"
 
 describe FeverAPI::WriteMarkGroup do
   let(:group_marker) { double("group marker") }

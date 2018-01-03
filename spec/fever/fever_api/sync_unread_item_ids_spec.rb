@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/sync_unread_item_ids"
+require "rails_helper"
 
 describe FeverAPI::SyncUnreadItemIds do
   let(:story_ids) { [5, 7, 11] }

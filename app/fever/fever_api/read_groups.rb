@@ -1,5 +1,3 @@
-require_relative "../repositories/group_repository"
-
 module FeverAPI
   class ReadGroups
     def initialize(options = {})

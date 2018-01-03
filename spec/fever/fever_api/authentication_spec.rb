@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/authentication"
+require "rails_helper"
 
 describe FeverAPI::Authentication do
   it "returns a hash with keys :auth and :last_refreshed_on_time" do

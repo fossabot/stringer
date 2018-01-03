@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/write_mark_feed"
+require "rails_helper"
 
 describe FeverAPI::WriteMarkFeed do
   let(:feed_marker) { double("feed marker") }

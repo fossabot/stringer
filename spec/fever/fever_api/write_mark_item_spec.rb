@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/write_mark_item"
+require "rails_helper"
 
 describe FeverAPI::WriteMarkItem do
   let(:item_marker) { double("item marker") }

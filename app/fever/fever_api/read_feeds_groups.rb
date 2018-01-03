@@ -1,5 +1,3 @@
-require_relative "../repositories/feed_repository"
-
 module FeverAPI
   class ReadFeedsGroups
     def initialize(options = {})

@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/read_links"
+require "rails_helper"
 
 describe FeverAPI::ReadLinks do
   subject { FeverAPI::ReadLinks.new }

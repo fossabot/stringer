@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/read_groups"
+require "rails_helper"
 
 describe FeverAPI::ReadGroups do
   let(:group_1) { double("group_1", as_fever_json: { id: 1, title: "IT news" }) }

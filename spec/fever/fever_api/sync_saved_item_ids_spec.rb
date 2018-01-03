@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/sync_saved_item_ids"
+require "rails_helper"
 
 describe FeverAPI::SyncSavedItemIds do
   let(:story_ids) { [5, 7, 11] }

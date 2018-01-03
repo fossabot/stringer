@@ -1,6 +1,4 @@
-require "spec_helper"
-
-app_require "fever_api/read_items"
+require "rails_helper"
 
 describe FeverAPI::ReadItems do
   let(:story_repository) { double("repo") }
