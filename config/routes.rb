@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   namespace :setup do
     resource :password, only: [:show, :create]
+
+    resource :tutorial, only: :show
   end
 
   namespace :feeds do
