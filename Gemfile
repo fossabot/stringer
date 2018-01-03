@@ -71,3 +71,7 @@ gem "rack-protection", "~> 1.5"
 gem "rack-ssl", "~> 1.4"
 gem "thread", "~> 0.2"
 gem "will_paginate", "~> 3.1"
+
+group :test do
+  gem 'shoulda-matchers'
+end
