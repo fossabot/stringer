@@ -1,5 +1,5 @@
 <% content_for :head do %>
-  <link href='/css/reenie-beanie-font.css' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag 'reenie-beanie-font' %>
 <% end %>
 
 <div class="tutorial-overlay">
@@ -19,7 +19,7 @@
 </div>
 
 <div id="action-bar">
-  <%= render_partial :tutorial_action_bar, {stories: @sample_stories} %>
+  <%= render 'shared/tutorial_action_bar', { stories: @sample_stories } %>
 </div>
 
 <%= render_js :stories, { stories: @sample_stories } %>
