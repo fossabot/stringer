@@ -73,5 +73,6 @@ gem "thread", "~> 0.2"
 gem "will_paginate", "~> 3.1"
 
 group :test do
+  gem 'database_rewinder'
   gem 'shoulda-matchers'
 end
