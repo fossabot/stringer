@@ -54,7 +54,6 @@ group :development, :test do
   gem "coveralls", "~> 0.7", require: false
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
-  gem "shotgun", "~> 0.9"
   gem "timecop", "~> 0.8"
 end
 
