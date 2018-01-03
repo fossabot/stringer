@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   resources :feeds, only: [:index, :new, :create, :edit, :update, :destroy]
 
+  resources :news, only: :index
+
   namespace :feeds do
     resource :import, only: [:show, :create]
 
