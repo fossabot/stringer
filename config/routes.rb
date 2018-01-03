@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   namespace :feeds do
     resource :import, only: [:show, :create]
+
+    resource :export, only: :show
   end
 
   resource :session, only: [:new, :create, :destroy]
