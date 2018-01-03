@@ -1,7 +1,5 @@
 require "thread/pool"
 
-require_relative "fetch_feed"
-
 class FetchFeeds
   def initialize(feeds, pool = nil)
     @pool  = pool

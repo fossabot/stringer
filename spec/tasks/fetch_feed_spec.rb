@@ -1,5 +1,4 @@
-require "spec_helper"
-app_require "tasks/fetch_feed"
+require "rails_helper"
 
 describe FetchFeed do
   describe "#fetch" do

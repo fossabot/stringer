@@ -1,4 +1,4 @@
-require "spec_helper"
+require "rails_helper"
 
 describe FetchFeeds do
   describe "#fetch_all" do
