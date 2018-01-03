@@ -1,10 +1,10 @@
-<%= render_js_template :story %>
+<%= render 'story.js' %>
 
 <script type="text/javascript">
   $(document).ready(function() {
     var Stories = new StoryList;
     var StoryApp = new AppView(Stories);
-    StoryApp.loadData(<%= stories.to_json %>);
+    StoryApp.loadData(<%= stories.to_json.html_safe %>);
 
     Mousetrap.bind("j", function() {
       StoryApp.moveCursorDown();

@@ -22,7 +22,7 @@
   <%= render 'shared/tutorial_action_bar', { stories: @sample_stories } %>
 </div>
 
-<%= render_js :stories, { stories: @sample_stories } %>
+<%= render 'stories.js', stories: @sample_stories %>
 
 <div id="stories">
   <ul id="story-list">
