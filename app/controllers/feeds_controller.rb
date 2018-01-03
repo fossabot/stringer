@@ -16,4 +16,10 @@ class FeedsController < ApplicationController
 
     redirect_to feeds_path
   end
+
+  def destroy
+    FeedRepository.delete(params[:id])
+
+    head :no_content
+  end
 end
