@@ -29,6 +29,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'nokogiri'
 gem 'loofah'
+gem 'kaminari'
 gem 'pry-rails'
 gem 'dotenv-rails'
 
@@ -66,7 +67,6 @@ gem "feedbag", "~> 0.9.5"
 gem "feedjira", "~> 2.1.0"
 gem "rack-protection", "~> 1.5"
 gem "thread", "~> 0.2"
-gem "will_paginate", "~> 3.1"
 
 group :test do
   gem 'database_rewinder'

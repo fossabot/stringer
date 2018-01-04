@@ -11,8 +11,8 @@
   </div>
 
   <div id="pagination">
-  <% if @starred_stories.previous_page %>
-    <a id="prev_page" href="?page=<%= @starred_stories.previous_page %>"><%= t('starred.previous') %></a>
+  <% if @starred_stories.prev_page %>
+    <a id="prev_page" href="?page=<%= @starred_stories.prev_page %>"><%= t('starred.previous') %></a>
   <% end %>
 
   <% if @starred_stories.total_pages > 1 %>

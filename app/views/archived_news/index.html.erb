@@ -11,8 +11,8 @@
   </div>
 
   <div id="pagination">
-  <% if @read_stories.previous_page %>
-    <a id="prev_page" href="?page=<%= @read_stories.previous_page %>"><%= t('archive.previous') %></a>
+  <% if @read_stories.prev_page %>
+    <a id="prev_page" href="?page=<%= @read_stories.prev_page %>"><%= t('archive.previous') %></a>
   <% end %>
 
   <% if @read_stories.total_pages > 1 %>

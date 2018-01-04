@@ -58,12 +58,12 @@ class StoryRepository
 
   def self.read(page = 1)
     Story.where(is_read: true).includes(:feed)
-         .order("published desc").page(page).per_page(20)
+         .order("published desc").page(page).per(20)
   end
 
   def self.starred(page = 1)
     Story.where(is_starred: true).includes(:feed)
-         .order("published desc").page(page).per_page(20)
+         .order("published desc").page(page).per(20)
   end
 
   def self.all_starred
@@ -86,7 +86,7 @@ class StoryRepository
   end
 
   def self.extract_content(entry)
-    sanitized_content = ""
+    sanitized_content = ''
 
     if entry.content
       sanitized_content = sanitize(entry.content)
@@ -104,7 +104,7 @@ class StoryRepository
   end
 
   def self.sanitize(content)
-    Loofah.fragment(content.gsub(/<wbr\s*>/i, ""))
+    Loofah.fragment(content.gsub(/<wbr\s*>/i, ''))
           .scrub!(:prune)
           .scrub!(:unprintable)
           .to_s
