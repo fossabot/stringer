@@ -159,8 +159,6 @@ GEM
     public_suffix (3.0.1)
     puma (3.11.0)
     rack (2.0.3)
-    rack-protection (1.5.3)
-      rack
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.2.0.beta2)
@@ -311,7 +309,6 @@ DEPENDENCIES
   pg (~> 0.18)
   pry-rails
   puma (~> 3.11)
-  rack-protection (~> 1.5)
   rack-test (~> 0.6)
   rails (~> 5.2.0.beta2)
   rspec-html-matchers (~> 0.7)

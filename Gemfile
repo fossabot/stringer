@@ -65,7 +65,6 @@ gem "delayed_job", "~> 4.1"
 gem "delayed_job_active_record", "~> 4.1"
 gem "feedbag", "~> 0.9.5"
 gem "feedjira", "~> 2.1.0"
-gem "rack-protection", "~> 1.5"
 gem "thread", "~> 0.2"
 
 group :test do
