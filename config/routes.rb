@@ -21,6 +21,8 @@ Rails.application.routes.draw do
     resource :export, only: :show
   end
 
+  resources :feed, only: :show
+
   resource :session, only: [:new, :create, :destroy]
 
   resource :heroku, only: :show
