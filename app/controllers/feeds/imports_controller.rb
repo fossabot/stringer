@@ -2,9 +2,6 @@
 
 module Feeds
   class ImportsController < ApplicationController
-    def show
-    end
-
     def create
       ::ImportFromOpml.import(params[:opml_file])
 
