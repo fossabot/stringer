@@ -290,7 +290,7 @@ DEPENDENCIES
   feedjira (~> 2.1.0)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  loofah (~> 2.0)
+  loofah
   nokogiri
   pg (~> 0.18)
   pry-rails
