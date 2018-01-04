@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   resources :stories, only: :update
 
+  namespace :stories do
+    resource :mark_all_as_read, only: :create
+  end
+
   resources :starred, only: :index, controller: 'starred_news'
 
   resources :archive, only: :index, controller: 'archived_news'
