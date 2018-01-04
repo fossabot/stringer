@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FeedRepository
   MIN_YEAR = 1970
 

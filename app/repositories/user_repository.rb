@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UserRepository
   def self.fetch(id)
     return nil unless id
