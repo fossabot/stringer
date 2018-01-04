@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Setup
   class TutorialsController < ApplicationController
     def show

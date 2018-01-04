@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Feeds
   class ImportsController < ApplicationController
     def show

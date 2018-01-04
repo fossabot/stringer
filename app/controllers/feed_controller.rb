@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FeedController < ApplicationController
   def show
     @feed = FeedRepository.fetch(params[:id])

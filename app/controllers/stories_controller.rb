@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StoriesController < ApplicationController
   def update
     json_params = JSON.parse(request.body.read, symbolize_names: true)

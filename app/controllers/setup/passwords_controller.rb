@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Setup
   class PasswordsController < ApplicationController
     before_action :setup_complete
