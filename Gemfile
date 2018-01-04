@@ -45,6 +45,7 @@ group :development do
   gem 'rubocop-rspec', require: false
   gem 'spring-commands-rspec'
   gem 'spring-commands-rubocop'
+  gem 'brakeman', require: false
 end
 
 group :development, :test do

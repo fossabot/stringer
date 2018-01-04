@@ -48,6 +48,7 @@ GEM
     bcrypt (3.1.11)
     bootsnap (1.1.7)
       msgpack (~> 1.0)
+    brakeman (4.1.1)
     builder (3.2.3)
     capybara (2.17.0)
       addressable
@@ -278,6 +279,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
+  brakeman
   capybara (~> 2.6)
   coffee-rails (~> 4.2)
   coveralls (~> 0.7)
