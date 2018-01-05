@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "nokogiri"
+require 'nokogiri'
 
 class ExportToOpml
   def initialize(feeds)
@@ -9,16 +9,16 @@ class ExportToOpml
 
   def to_xml # rubocop:disable Metrics/MethodLength
     builder = Nokogiri::XML::Builder.new do |xml|
-      xml.opml(version: "1.0") do
+      xml.opml(version: '1.0') do
         xml.head do
-          xml.title "Feeds from Stringer"
+          xml.title 'Feeds from Stringer'
         end
         xml.body do
           @feeds.each do |feed|
             xml.outline(
               text: feed.name,
               title: feed.name,
-              type: "rss",
+              type: 'rss',
               xmlUrl: feed.url
             )
           end
