@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MarkFeedAsRead
   def initialize(feed_id, timestamp, repository = StoryRepository)
     @feed_id   = feed_id.to_i

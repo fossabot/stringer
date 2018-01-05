@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FindNewStories
   STORY_AGE_THRESHOLD_DAYS = 3
 

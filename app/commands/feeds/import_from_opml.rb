@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ImportFromOpml
   ONE_DAY = 24 * 60 * 60
 

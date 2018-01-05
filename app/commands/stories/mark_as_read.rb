@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MarkAsRead
   def initialize(story_id, repository = StoryRepository)
     @story_id = story_id

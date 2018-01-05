@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MarkGroupAsRead
   KINDLING_GROUP_ID = 0
   SPARKS_GROUP_ID   = -1

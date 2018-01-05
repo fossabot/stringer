@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ChangeUserPassword
   def initialize(repository = UserRepository)
     @repo = repository

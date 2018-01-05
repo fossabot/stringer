@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SignInUser
   def self.sign_in(submitted_password, repository = User)
     user = repository.first

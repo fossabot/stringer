@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MarkAsStarred
   def initialize(story_id, repository = StoryRepository)
     @story_id = story_id
