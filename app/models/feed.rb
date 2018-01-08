@@ -1,28 +1,20 @@
 # frozen_string_literal: true
 
 class Feed < ApplicationRecord
-  has_many :stories, -> { order "published desc" }, dependent: :delete_all
+  enum status: [:green, :yellow, :red]
+
   belongs_to :group
 
-  validates_uniqueness_of :url
+  has_many :stories, -> { order('published desc') }, dependent: :destroy
 
-  STATUS = { green: 0, yellow: 1, red: 2 }.freeze
+  has_many :unread_stories, -> { where('is_read = ?', false).order('published desc') }, class_name: 'Story'
 
-  def status
-    STATUS.key(read_attribute(:status))
-  end
-
-  def status=(s)
-    write_attribute(:status, STATUS[s])
-  end
+  validates :url, uniqueness: true
 
   def status_bubble
-    return :yellow if status == :red && stories.any?
-    status
-  end
+    return 'yellow' if red? && stories.any?
 
-  def unread_stories
-    stories.where("is_read = ?", false)
+    status
   end
 
   def as_fever_json
