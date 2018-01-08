@@ -55,7 +55,6 @@ group :development, :test do
   gem 'faker'
 
   gem "capybara", "~> 2.6"
-  gem "coveralls", "~> 0.7", require: false
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
   gem "timecop", "~> 0.8"
@@ -70,4 +69,5 @@ gem "thread", "~> 0.2"
 group :test do
   gem 'database_rewinder'
   gem 'shoulda-matchers'
+  # gem 'simplecov', require: false
 end
