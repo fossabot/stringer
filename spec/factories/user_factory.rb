@@ -1,11 +1,7 @@
-require_relative "./feed_factory"
+# frozen_string_literal: true
 
-class UserFactory
-  class FakeUser < OpenStruct; end
-
-  def self.build
-    FakeUser.new(
-      id: rand(100),
-      setup_complete: false)
+FactoryBot.define do
+  factory :user do
+    setup_complete false
   end
 end
