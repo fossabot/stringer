@@ -1,8 +1,11 @@
-require "rails_helper"
+# frozen_string_literal: true
 
-xdescribe CompleteSetup do
-  let(:user) { UserFactory.build }
-  it "marks setup as complete" do
+require 'rails_helper'
+
+describe CompleteSetup do
+  let(:user) { build(:user) }
+
+  it 'marks setup as complete' do
     expect(user).to receive(:save).once
 
     result = CompleteSetup.complete(user)
