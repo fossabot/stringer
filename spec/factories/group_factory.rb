@@ -1,16 +1,7 @@
-class GroupFactory
-  class FakeGroup < OpenStruct
-    def as_fever_json
-      {
-        id: id,
-        title: name
-      }
-    end
-  end
+# frozen_string_literal: true
 
-  def self.build(params = {})
-    FakeGroup.new(
-      id: rand(100),
-      name: params[:name] || Faker::Name.name + " group")
+FactoryBot.define do
+  factory :group do
+    name { "#{ Faker::Name.name } group" }
   end
 end
