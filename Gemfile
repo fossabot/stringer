@@ -69,5 +69,6 @@ gem "thread", "~> 0.2"
 group :test do
   gem 'database_rewinder'
   gem 'shoulda-matchers'
+  gem 'rspec-its'
   gem 'simplecov', require: false
 end
