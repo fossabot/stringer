@@ -23,7 +23,7 @@ class Story < ApplicationRecord
     I18n.l(published)
   end
 
-  def as_json(_options = {})
+  def as_json(*)
     super(methods: [:headline, :lead, :source, :pretty_date])
   end
 
