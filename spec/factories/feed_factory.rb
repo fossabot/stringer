@@ -5,6 +5,6 @@ FactoryBot.define do
     group
     name { "#{ Faker::Name.name } on Software" }
     url { Faker::Internet.url }
-    last_fetched { Time.now }
+    last_fetched { Time.zone.now }
   end
 end
