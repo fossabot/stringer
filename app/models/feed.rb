@@ -7,7 +7,7 @@ class Feed < ApplicationRecord
 
   has_many :stories, -> { order('published desc') }, dependent: :destroy
 
-  has_many :unread_stories, -> { where('is_read = ?', false).order('published desc') }, class_name: 'Story'
+  has_many :unread_stories, -> { where(is_read: false).order('published desc') }, class_name: 'Story'
 
   validates :url, uniqueness: true
 
