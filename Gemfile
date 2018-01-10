@@ -34,10 +34,7 @@ gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'whenever', require: false
 gem 'sidekiq', require: false
-
-group :production do
-  gem 'newrelic_rpm'
-end
+gem 'newrelic_rpm'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
