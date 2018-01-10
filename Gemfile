@@ -33,6 +33,7 @@ gem 'kaminari'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'whenever', require: false
+gem 'sidekiq', require: false
 
 group :production do
   gem 'newrelic_rpm'
