@@ -9,7 +9,7 @@ set :branch, 'port-to-rails'
 set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
 
-set :linked_files, ['config/database.yml', 'config/newrelic.yml', '.env']
+set :linked_files, ['config/database.yml', 'config/credentials.yml.enc', 'config/newrelic.yml', '.env']
 set :linked_dirs, ['bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/assets']
 set :config_files, ['database.yml']
 
