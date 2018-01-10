@@ -47,6 +47,14 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'spring-commands-rubocop'
   gem 'brakeman', require: false
+  gem 'bcrypt_pbkdf' # for rbnacl-libsodium
+  gem 'rbnacl', '< 4.0' # for rbnacl-libsodium
+  gem 'rbnacl-libsodium' # for ssh-ed25519 support
+  gem 'capistrano', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-faster-assets', require: false
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano-rbenv-install', require: false
 end
 
 group :development, :test do
