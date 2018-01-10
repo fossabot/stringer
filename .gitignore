@@ -24,6 +24,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# and credentials too
+/config/credentials.yml.enc
+
 /coverage/*
 .DS_Store
 .idea/*
