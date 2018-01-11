@@ -38,6 +38,7 @@ gem 'dotenv-rails'
 gem 'whenever', require: false
 gem 'sidekiq', require: false
 gem 'newrelic_rpm'
+gem 'lograge'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
