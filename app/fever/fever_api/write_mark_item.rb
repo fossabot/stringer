@@ -8,7 +8,7 @@ module FeverAPI
     end
 
     def call(params = {})
-      mark_item_as(params[:id], params[:as]) if params[:mark] == "item"
+      mark_item_as(params[:id], params[:as]) if params[:mark] == 'item'
 
       {}
     end
@@ -17,13 +17,13 @@ module FeverAPI
 
     def mark_item_as(id, as)
       case as
-      when "read"
+      when 'read'
         @read_marker_class.new(id).mark_as_read
-      when "unread"
+      when 'unread'
         @unread_marker_class.new(id).mark_as_unread
-      when "saved"
+      when 'saved'
         @starred_marker_class.new(id).mark_as_starred
-      when "unsaved"
+      when 'unsaved'
         @unstarred_marker_class.new(id).mark_as_unstarred
       end
     end

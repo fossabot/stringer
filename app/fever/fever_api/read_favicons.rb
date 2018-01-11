@@ -1,7 +1,7 @@
 module FeverAPI
   class ReadFavicons
     def call(params = {})
-      if params.keys.include?("favicons")
+      if params.keys.include?('favicons')
         { favicons: favicons }
       else
         {}
@@ -14,7 +14,7 @@ module FeverAPI
       [
         {
           id: 0,
-          data: "image/gif;base64,R0lGODlhAQABAIAAAObm5gAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          data: 'image/gif;base64,R0lGODlhAQABAIAAAObm5gAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
         }
       ]
     end

@@ -4,7 +4,7 @@ module FeverAPI
       @clock = options.fetch(:clock) { Time }
     end
 
-    def call(_params)
+    def call(_)
       { auth: 1, last_refreshed_on_time: @clock.now.to_i }
     end
   end
