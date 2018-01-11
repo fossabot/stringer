@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FeverAPI
   class ReadFeedsGroups
     def initialize(options = {})

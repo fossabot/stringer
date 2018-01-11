@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module FeverAPI
   API_VERSION = 3
 
