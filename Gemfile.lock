@@ -123,6 +123,7 @@ GEM
     ffi (1.9.18)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    http_accept_language (2.1.1)
     httparty (0.15.6)
       multi_xml (>= 0.5.2)
     i18n (0.9.1)
@@ -357,6 +358,7 @@ DEPENDENCIES
   faker
   feedbag (~> 0.9.5)
   feedjira (~> 2.1.0)
+  http_accept_language
   jbuilder (~> 2.5)
   kaminari
   license_finder

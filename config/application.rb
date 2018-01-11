@@ -29,6 +29,10 @@ module Stringer
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    config.i18n.available_locales = ['en', 'de', 'el-GR', 'eo', 'es', 'fr',
+                                     'he', 'it', 'ja', 'nl', 'pt-BR', 'pt',
+                                     'ru', 'sv', 'tr', 'zh-CN']
+
     config.autoload_paths << Rails.root.join('app', 'commands', 'feeds')
     config.autoload_paths << Rails.root.join('app', 'commands', 'stories')
     config.autoload_paths << Rails.root.join('app', 'commands', 'users')

@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'nokogiri'
 gem 'loofah'
 gem 'kaminari'
+gem 'http_accept_language'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'whenever', require: false
