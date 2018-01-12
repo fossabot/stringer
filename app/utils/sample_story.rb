@@ -1,5 +1,5 @@
 SampleStory = Struct.new(:source, :title, :lead, :is_read, :published) do
-  BODY = <<-eos.freeze
+  BODY = <<-EOS.freeze
 <p>Tofu shoreditch intelligentsia <a href="#">umami</a>, fashion axe photo booth
 try-hard terry richardson quinoa actually fingerstache meggings fixie. Aesthetic
 salvia vinyl raw denim, keffiyeh master cleanse tonx selfies mlkshk occupy twee
@@ -18,7 +18,7 @@ tumblr pop-up four loko you probably haven't heard of them dreamcatcher.
 Single-origin coffee direct trade retro biodiesel, truffaut fanny pack portland
 blue bottle scenester bushwick. Skateboard squid fanny pack bushwick, photo
 booth vice literally.</p>
-    eos
+    EOS
 
   def id
     -1 * rand(100)
@@ -56,7 +56,7 @@ booth vice literally.</p>
     Time.now
   end
 
-  def as_json(_options = {})
+  def as_json(*)
     {
       id: id,
       headline: headline,
