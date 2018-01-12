@@ -38,12 +38,18 @@
 
     Mousetrap.bind("r", function() {
       var refresh = $("a#refresh")[0];
-      if (refresh) refresh.click();
+
+      if (refresh) {
+        refresh.click();
+      }
     });
 
     Mousetrap.bind("a", function() {
       var add_feed = $("a#add-feed")[0];
-      if (add_feed) add_feed.click();
+
+      if (add_feed) {
+        add_feed.click();
+      }
     });
 
     Mousetrap.bind("shift+a", function() {
