@@ -61,8 +61,31 @@ describe Story do
     it { expect(subject.pretty_date).to eq('Jan 12, 18:23') }
   end
 
-  describe '#as_json' do
-  end
+  # TODO: finish this
+  # describe '#as_json' do
+  #   let(:feed) { create(:feed, name: 'John Dow') }
+  #
+  #   let(:story) do
+  #     create(:story,
+  #            feed: feed,
+  #            title: 'Hello World!',
+  #            body: 'Welcome!',
+  #            published: Time.zone.local(2018, 1, 12, 18, 23, 0))
+  #   end
+  #
+  #   # subject { binding.pry; story.as_json }
+  #   # subject { story.as_json }
+  #
+  #   # its(['headline']) { should eq('Hello World!') }
+  #
+  #   # its(['lead']) { should eq('Welcome!') }
+  #   #
+  #   # its(['url']) { should eq('https://example.com/blog/1') }
+  #   #
+  #   # its(['source']) { should eq('John Dow') }
+  #   #
+  #   # its(['pretty_date']) { should eq(1515781380) }
+  # end
 
   # def as_json(*)
   #   super(methods: [:headline, :lead, :source, :pretty_date])
@@ -84,6 +107,12 @@ describe Story do
     end
 
     subject { story.as_fever_json }
+
+    it do
+      expect(subject.keys.sort).to eq([:author, :created_on_time, :feed_id,
+                                       :html, :id, :is_read, :is_saved,
+                                       :title, :url])
+    end
 
     its([:id]) { should eq(123) }
 
