@@ -15,6 +15,7 @@ class Story < ApplicationRecord
     strip_html(body)[0, 100]
   end
 
+  # TODO: just delegate to :feed
   def source
     feed.name
   end

@@ -46,18 +46,12 @@ describe Story do
   end
 
   describe '#source' do
-    let(:story) do
-      build(:story,
-            title: Faker::Lorem.sentence(50),
-            body: Faker::Lorem.sentence(50))
-    end
+    let(:feed) { create(:feed, name: 'Superfeed') }
 
-    let(:feed) { Feed.new(name: 'Superfeed') }
-
-    before { story.feed = feed }
+    subject { create(:story, feed: feed) }
 
     it 'returns the feeds name' do
-      expect(story.source).to eq(feed.name)
+      expect(subject.source).to eq('Superfeed')
     end
   end
 end
