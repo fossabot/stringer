@@ -25,6 +25,8 @@ class FindNewStories
   private
 
   def story_age_exceeds_threshold?(story)
+    return false
+
     max_age = Time.now - STORY_AGE_THRESHOLD_DAYS.days
     story.published && story.published < max_age
   end
