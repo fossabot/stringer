@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Story < ApplicationRecord
-  UNTITLED = '[untitled]'.freeze
+  UNTITLED = '[untitled]'
 
   belongs_to :feed
 
