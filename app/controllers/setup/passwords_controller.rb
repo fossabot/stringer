@@ -2,7 +2,9 @@
 
 module Setup
   class PasswordsController < ApplicationController
-    before_action :setup_complete
+    skip_before_action :authenticate
+
+    before_action :setup_completed
 
     def show
     end
@@ -22,8 +24,8 @@ module Setup
 
     private
 
-    def setup_complete
-      redirect_to '/news' if UserRepository.setup_complete?
+    def setup_completed
+      redirect_to news_index_path if UserRepository.setup_complete?
     end
 
     def no_password(params)

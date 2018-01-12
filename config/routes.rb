@@ -35,5 +35,5 @@ Rails.application.routes.draw do
 
   resource :debug, only: :show
 
-  root to: 'home#index'
+  root to: 'news#index'
 end
