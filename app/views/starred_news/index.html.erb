@@ -2,7 +2,11 @@
   <%= render 'feed_action_bar' %>
 </div>
 
-<% unless @starred_stories.empty? %>
+<% if @starred_stories.empty? %>
+  <div id="sorry">
+    <p><%= t('starred.sorry') %></p>
+  </div>
+<% else %>
   <%= render 'stories.js', stories: @starred_stories %>
 
   <div id="stories">
@@ -45,9 +49,4 @@
       });
     });
   </script>
-
-<% else %>
-  <div id="sorry">
-    <p><%= t('starred.sorry') %></p>
-  </div>
 <% end %>
