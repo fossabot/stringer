@@ -54,4 +54,53 @@ describe Story do
       expect(subject.source).to eq('Superfeed')
     end
   end
+
+  describe '#pretty_date' do
+    subject { build(:story, published: Time.zone.local(2018, 1, 12, 18, 23)) }
+
+    it { expect(subject.pretty_date).to eq('Jan 12, 18:23') }
+  end
+
+  describe '#as_json' do
+  end
+
+  # def as_json(*)
+  #   super(methods: [:headline, :lead, :source, :pretty_date])
+  # end
+
+  describe '#as_fever_json' do
+    let(:feed) { create(:feed, id: 42, name: 'John Dow') }
+
+    let(:story) do
+      create(:story,
+             id: 123,
+             feed: feed,
+             title: 'Hello World!',
+             body: 'Welcome!',
+             permalink: 'https://example.com/blog/1',
+             is_starred: false,
+             is_read: true,
+             published: Time.zone.local(2018, 1, 12, 18, 23, 0))
+    end
+
+    subject { story.as_fever_json }
+
+    its([:id]) { should eq(123) }
+
+    its([:feed_id]) { should eq(42) }
+
+    its([:title]) { should eq('Hello World!') }
+
+    its([:author]) { should eq('John Dow') }
+
+    its([:html]) { should eq('Welcome!') }
+
+    its([:url]) { should eq('https://example.com/blog/1') }
+
+    its([:is_saved]) { should eq(0) }
+
+    its([:is_read]) { should eq(1) }
+
+    its([:created_on_time]) { should eq(1515781380) }
+  end
 end
