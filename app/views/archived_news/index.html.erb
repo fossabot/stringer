@@ -2,7 +2,11 @@
   <%= render 'feed_action_bar' %>
 </div>
 
-<% unless @read_stories.empty? %>
+<% if @read_stories.empty? %>
+  <div id="sorry">
+    <p><%= t('archive.sorry') %></p>
+  </div>
+<% else %>
   <%= render 'stories.js', stories: @read_stories %>
 
   <div id="stories">
@@ -33,20 +37,18 @@
       Mousetrap.bind("left", function() {
         var pageNumber = $("#prev_page").attr("href");
 
-        if (pageNumber)
+        if (pageNumber) {
           location.href = stripQuerystring(location.href) + pageNumber;
+        }
       });
 
       Mousetrap.bind("right", function() {
         var pageNumber = $("#next_page").attr("href");
 
-        if (pageNumber)
+        if (pageNumber) {
           location.href = stripQuerystring(location.href) + pageNumber;
+        }
       });
     });
   </script>
-<% else %>
-  <div id="sorry">
-    <p><%= t('archive.sorry') %></p>
-  </div>
 <% end %>
