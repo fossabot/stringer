@@ -1,26 +1,15 @@
-require "thread/pool"
-
 class FetchFeeds
-  def initialize(feeds, pool = nil)
-    @pool  = pool
+  def initialize(feeds)
     @feeds = feeds
     @feeds_ids = []
   end
 
   def fetch_all
-    @pool ||= Thread.pool(10)
-
     @feeds = FeedRepository.fetch_by_ids(@feeds_ids) if @feeds.blank? && !@feeds_ids.blank?
 
     @feeds.each do |feed|
-      @pool.process do
-        FetchFeed.new(feed).fetch
-
-        ActiveRecord::Base.connection.close
-      end
+      FetchFeed.new(feed).fetch
     end
-
-    @pool.shutdown
   end
 
   def prepare_to_delay
@@ -30,6 +19,8 @@ class FetchFeeds
   end
 
   def self.enqueue(feeds)
-    new(feeds).prepare_to_delay.delay.fetch_all
+    # new(feeds).prepare_to_delay.delay.fetch_all
+
+    new(feeds).prepare_to_delay.fetch_all
   end
 end
