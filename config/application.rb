@@ -33,6 +33,8 @@ module Stringer
                                      'he', 'it', 'ja', 'nl', 'pt-BR', 'pt',
                                      'ru', 'sv', 'tr', 'zh-CN']
 
+    config.active_job.queue_adapter = :sidekiq
+
     config.autoload_paths << Rails.root.join('app', 'commands', 'feeds')
     config.autoload_paths << Rails.root.join('app', 'commands', 'stories')
     config.autoload_paths << Rails.root.join('app', 'commands', 'users')

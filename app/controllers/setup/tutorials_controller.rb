@@ -3,7 +3,8 @@
 module Setup
   class TutorialsController < ApplicationController
     def show
-      FetchFeeds.enqueue(Feed.all)
+      FetchFeedsJob.perform_later
+
       CompleteSetup.complete(current_user)
 
       @sample_stories = StoryRepository.samples

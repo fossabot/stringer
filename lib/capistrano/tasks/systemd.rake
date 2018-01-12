@@ -6,6 +6,7 @@ namespace :systemd do
     on roles(:app), in: :sequence, wait: 5 do
       within current_path do
         execute 'sudo systemctl stop reader-backend'
+        execute 'sudo systemctl stop reader-sidekiq'
       end
     end
   end
@@ -15,6 +16,7 @@ namespace :systemd do
     on roles(:app), in: :sequence, wait: 5 do
       within current_path do
         execute 'sudo systemctl start reader-backend'
+        execute 'sudo systemctl start reader-sidekiq'
       end
     end
   end
@@ -24,6 +26,7 @@ namespace :systemd do
     on roles(:app), in: :sequence, wait: 5 do
       within current_path do
         execute 'sudo systemctl restart reader-backend'
+        execute 'sudo systemctl restart reader-sidekiq'
       end
     end
   end
