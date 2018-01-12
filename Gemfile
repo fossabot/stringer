@@ -72,7 +72,6 @@ end
 
 gem "feedbag", "~> 0.9.5"
 gem "feedjira", "~> 2.1.0"
-gem "thread", "~> 0.2"
 
 group :test do
   gem 'database_rewinder'
