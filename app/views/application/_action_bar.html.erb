@@ -10,16 +10,16 @@
   </div>
 
   <div class="pull-right">
-    <a class="btn btn-primary" id="starred" href="/starred" title="<%= t('partials.action_bar.starred_stories') %>">
+    <a class="btn btn-primary" id="starred" href="<%= starred_index_path %>" title="<%= t('partials.action_bar.starred_stories') %>">
       <i class="icon-star"></i>
     </a>
-    <a class="btn btn-primary" id="archive" href="/archive" title="<%= t('partials.action_bar.archived_stories') %>">
+    <a class="btn btn-primary" id="archive" href="<%= archive_index_path %>" title="<%= t('partials.action_bar.archived_stories') %>">
       <i class="icon-time"></i>
     </a>
-    <a class="btn btn-primary" id="feeds" href="/feeds" title="<%= t('partials.action_bar.view_feeds') %>">
+    <a class="btn btn-primary" id="feeds" href="<%= feeds_path %>" title="<%= t('partials.action_bar.view_feeds') %>">
       <i class="icon-list"></i>
     </a>
-    <a class="btn btn-primary" id="add-feed" href="/feeds/new" title="<%= t('partials.action_bar.add_feed') %>">
+    <a class="btn btn-primary" id="add-feed" href="<%= new_feed_path %>" title="<%= t('partials.action_bar.add_feed') %>">
       <i class="icon-plus"></i>
     </a>
   </div>
@@ -35,17 +35,26 @@
 
     Mousetrap.bind("r", function() {
       var refresh = $("a#refresh")[0];
-      if (refresh) refresh.click();
+
+      if (refresh) {
+        refresh.click();
+      }
     });
 
     Mousetrap.bind("f", function() {
       var all_feeds = $("a#feeds")[0];
-      if (all_feeds) all_feeds.click();
+
+      if (all_feeds) {
+        all_feeds.click();
+      }
     });
 
     Mousetrap.bind("a", function() {
       var add_feed = $("a#add-feed")[0];
-      if (add_feed) add_feed.click();
+
+      if (add_feed) {
+        add_feed.click();
+      }
     });
 
     Mousetrap.bind("shift+a", function() {
