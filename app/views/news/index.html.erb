@@ -1,6 +1,6 @@
 <% content_for :title do %>
   <% unless @unread_stories.empty? %>
-    <%= "(#{@unread_stories.count})" %>
+    <%= "(#{ @unread_stories.total_count })" %>
   <% end %>
 <% end %>
 
