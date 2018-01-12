@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 class Story < ApplicationRecord
+  UNTITLED = '[untitled]'.freeze
+
   belongs_to :feed
 
-  validates_uniqueness_of :entry_id, scope: :feed_id
-
-  UNTITLED = '[untitled]'.freeze
+  validates :entry_id, uniqueness: { scope: :feed_id }
 
   def headline
     title.nil? ? UNTITLED : strip_html(title)[0, 50]

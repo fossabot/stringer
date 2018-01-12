@@ -5,40 +5,53 @@ require 'rails_helper'
 describe Story do
   it { should be_an(ApplicationRecord) }
 
-  let(:story) do
-    build(:story,
-          title: Faker::Lorem.sentence(50),
-          body: Faker::Lorem.sentence(50))
-  end
+  it { expect(described_class::UNTITLED).to eq('[untitled]') }
+
+  it { should belong_to(:feed) }
+
+  it { should validate_uniqueness_of(:entry_id).scoped_to(:feed_id) }
 
   describe '#headline' do
-    it 'truncates to 50 chars' do
-      expect(story.headline.size).to eq(50)
+    context 'truncates to 50 chars' do
+      subject { build(:story, title: Faker::Lorem.sentence(50)) }
+
+      it { expect(subject.headline.size).to eq(50) }
     end
 
-    it 'uses a fallback string if story has no title' do
-      story.title = nil
-      expect(story.headline).to eq(Story::UNTITLED)
+    context 'uses a fallback string if story has no title' do
+      subject { build(:story, title: nil) }
+
+      it { expect(subject.headline).to eq(Story::UNTITLED) }
     end
 
-    it 'strips html out' do
-      story.title = '<b>Super cool</b> stuff'
-      expect(story.headline).to eq('Super cool stuff')
+    context 'strips html out' do
+      subject { build(:story, title: '<b>Super cool</b> stuff') }
+
+      it { expect(subject.headline).to eq('Super cool stuff') }
     end
   end
 
   describe '#lead' do
-    it 'truncates to 100 chars' do
-      expect(story.lead.size).to eq(100)
+    context 'truncates to 100 chars' do
+      subject { build(:story, body: Faker::Lorem.sentence(50)) }
+
+      it { expect(subject.lead.size).to eq(100) }
     end
 
-    it 'strips html out' do
-      story.body = "<a href='http://github.com'>Yo</a> dawg"
-      expect(story.lead).to eq('Yo dawg')
+    context 'strips html out' do
+      subject { build(:story, body: "<a href='http://github.com'>Yo</a> dawg") }
+
+      it { expect(subject.lead).to eq('Yo dawg') }
     end
   end
 
   describe '#source' do
+    let(:story) do
+      build(:story,
+            title: Faker::Lorem.sentence(50),
+            body: Faker::Lorem.sentence(50))
+    end
+
     let(:feed) { Feed.new(name: 'Superfeed') }
 
     before { story.feed = feed }
