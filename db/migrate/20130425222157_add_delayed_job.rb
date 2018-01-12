@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class AddDelayedJob < ActiveRecord::Migration[4.2]
-  def self.up
+  def change
     create_table :delayed_jobs, force: true do |table|
       # Allows some jobs to jump to the front of the queue
       table.integer :priority, default: 0
@@ -35,10 +35,6 @@ class AddDelayedJob < ActiveRecord::Migration[4.2]
       table.timestamps
     end
 
-    add_index :delayed_jobs, [:priority, :run_at], name: "delayed_jobs_priority"
-  end
-
-  def self.down
-    drop_table :delayed_jobs
+    add_index :delayed_jobs, [:priority, :run_at], name: 'delayed_jobs_priority'
   end
 end

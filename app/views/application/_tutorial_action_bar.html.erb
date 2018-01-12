@@ -10,10 +10,10 @@
   </div>
 
   <div class="pull-right">
-    <a class="btn btn-primary" id="feeds" href="/feeds" title="<%= t('partials.action_bar.view_feeds') %>">
+    <a class="btn btn-primary" id="feeds" href="<%= feeds_path %>" title="<%= t('partials.action_bar.view_feeds') %>">
       <i class="icon-list"></i>
     </a>
-    <a class="btn btn-primary" id="add-feed" href="/feeds/new" title="<%= t('partials.action_bar.add_feed') %>">
+    <a class="btn btn-primary" id="add-feed" href="<%= new_feed_path %>" title="<%= t('partials.action_bar.add_feed') %>">
       <i class="icon-plus"></i>
     </a>
   </div>
