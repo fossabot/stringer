@@ -7,7 +7,7 @@ describe Feed do
 
   it { should define_enum_for(:status).with([:green, :yellow, :red]) }
 
-  it { should belong_to(:group) }
+  it { should belong_to(:group) } # TODO: add .optional after shoulda-matchers update
 
   it { should have_many(:stories).order('published desc').dependent(:destroy) }
 
