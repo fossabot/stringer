@@ -18,7 +18,8 @@
 # end
 
 every :hour do
-  runner 'FetchFeedsJob.perform_later'
+  # runner 'FetchFeedsJob.perform_later'
+  rake 'fetch_feeds'
 end
 
 # Learn more: http://github.com/javan/whenever
