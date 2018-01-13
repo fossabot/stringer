@@ -1,12 +1,6 @@
 # frozen_string_literal: true
 
 class UserRepository
-  # def self.fetch(id)
-  #   return nil unless id
-  #
-  #   User.find(id)
-  # end
-
   def self.setup_complete?
     User.first&.setup_complete?
   end
