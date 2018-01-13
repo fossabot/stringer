@@ -35,6 +35,8 @@ module Stringer
 
     config.active_job.queue_adapter = :sidekiq
 
+    config.autoload_paths << Rails.root.join('app', 'services')
+
     config.autoload_paths << Rails.root.join('app', 'commands', 'feeds')
     config.autoload_paths << Rails.root.join('app', 'commands', 'stories')
     config.autoload_paths << Rails.root.join('app', 'commands', 'users')
