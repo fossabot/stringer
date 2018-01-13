@@ -14,7 +14,7 @@ class FeedsController < ApplicationController
     feed = AddNewFeed.add(@feed_url)
 
     if feed && feed.valid?
-      FetchFeeds.enqueue([feed])
+      FetchFeedJob.perform_later(feed)
 
       flash[:success] = t('feeds.add.flash.added_successfully')
 
