@@ -17,4 +17,5 @@ script:
   - bundle exec rspec
   - mocha-phantomjs http://localhost:4567/test
   - bundle exec rubocop
+  - bundle exec license_finder
 sudo: false
