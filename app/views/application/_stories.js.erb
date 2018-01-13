@@ -40,7 +40,9 @@
       StoryApp.toggleCurrentStarred();
     });
 
-    Mousetrap.bind(["space"], function() {
+    Mousetrap.bind(["space"], function(e) {
+      e.preventDefault();
+
       StoryApp.moveCursorDown();
       StoryApp.toggleCurrent();
     });
