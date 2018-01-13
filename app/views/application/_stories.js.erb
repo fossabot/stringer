@@ -39,5 +39,10 @@
     Mousetrap.bind(["s"], function() {
       StoryApp.toggleCurrentStarred();
     });
+
+    Mousetrap.bind(["space"], function() {
+      StoryApp.moveCursorDown();
+      StoryApp.toggleCurrent();
+    });
   });
 </script>
