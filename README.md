@@ -1,4 +1,4 @@
-# Stringer
+# Stringer. Enhanced.
 
 [![Build Status](https://api.travis-ci.org/swanson/stringer.svg?style=flat)](https://travis-ci.org/swanson/stringer)
 [![Code Climate](https://codeclimate.com/github/swanson/stringer.svg?style=flat)](https://codeclimate.com/github/swanson/stringer)
@@ -15,9 +15,22 @@ But it does have keyboard shortcuts and was made with love!
 ![](screenshots/stories.png)
 ![](screenshots/feed.png)
 
+### Enhanced edition
+
+* Updated to latest Ruby
+* Ported to Rails from Sinatra
+* Ported to sidekiq from delayed_job
+
+## Environment
+
+* Ruby 2.5.0
+* RubyGems 2.7.4
+* Bundler 1.16.1
+* PostgreSQL
+
 ## Installation
 
-Stringer is a Ruby (2.3.0+) app based on Sinatra, ActiveRecord, PostgreSQL, Backbone.js and DelayedJob.
+Stringer is a Ruby app based on Rails, PostgreSQL, Backbone.js and Sidekiq.
 
 [![Deploy to Heroku](https://cdn.herokuapp.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -91,7 +104,7 @@ task.
 
 ## Development
 
-Run the Ruby tests with `rspec`.
+Run the Ruby tests with `bundle exec rspec`.
 
 Run the Javascript tests with `rake test_js` and then open a browser to `http://localhost:4567/test`.
 
@@ -105,13 +118,13 @@ Then run the following commands.
 
 ```sh
 bundle install
-rake db:migrate
+rails db:create db:migrate
 foreman start
 ```
 
-The application will be running on port `5000`.
+The application will be running on port `3000`.
 
-You can launch an interactive console (a la `rails console`) using `racksh`.
+You can launch an interactive console using `rails console` (or `rails c` for short).
 
 ## Acknowledgements
 
