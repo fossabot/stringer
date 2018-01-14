@@ -4,13 +4,17 @@
 
   <hr />
 
-  <form method="POST" id="login" action="/session">
-    <input class="hidden" value="username" />
+  <%= form_with(url: session_path, id: 'login') do |form| %>
     <div class="control-group">
-      <input name="password" id="password" type="password" autofocus />
-      <i class="icon-lock field-icon"></i>
-      <label id="password-label" class="field-label" for="password"><%= t('sessions.new.fields.password') %></label>
+      <%= form.email_field(:email, autofocus: true) %>
+      <i class="icon-envelope-alt field-icon"></i>
+      <%= form.label(:email, t('sessions.new.fields.email'), id: 'email-label', class: 'field-label') %>
     </div>
-    <input type="submit" value="<%= t('sessions.new.fields.submit') %>" class="btn btn-primary pull-right" />
-  </form>
+    <div class="control-group">
+      <%= form.password_field(:password) %>
+      <i class="icon-lock field-icon"></i>
+      <%= form.label(:password, t('sessions.new.fields.password'), id: 'password-label', class: 'field-label') %>
+    </div>
+    <%= form.submit(t('sessions.new.fields.submit'), class: 'btn btn-primary pull-right') %>
+  <% end %>
 </div>

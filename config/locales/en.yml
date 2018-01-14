@@ -6,7 +6,7 @@ en:
     sorry: Sorry, you haven't read any stories yet!
   date:
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -121,6 +121,7 @@ en:
         logged_out_successfully: You have been signed out!
     new:
       fields:
+        email: Email
         password: Password
         submit: Login
       flash:

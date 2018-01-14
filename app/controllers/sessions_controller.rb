@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 class SessionsController < ApplicationController
-  skip_before_action :authenticate
+  skip_before_action :authenticate, only: [:new, :create]
 
   before_action :setup_account
 
   def create
-    user = SignInUser.sign_in(params[:password])
+    @sign_in = UserSignIn.new(resource_params)
 
-    if user
-      session[:user_id] = user.id
+    if @sign_in.save
+      session[:user_id] = @sign_in.model.id
 
       redirect_uri = session.delete(:redirect_to) || '/'
 
@@ -33,5 +33,9 @@ class SessionsController < ApplicationController
 
   def setup_account
     redirect_to setup_password_path if !UserRepository.setup_complete?
+  end
+
+  def resource_params
+    params.require(:session).permit(:email, :password)
   end
 end
