@@ -20,11 +20,11 @@ class FeedsController < ApplicationController
 
       redirect_to root_path
     elsif feed
-      flash.now[:error] = t('feeds.add.flash.already_subscribed_error')
+      flash[:error] = t('feeds.add.flash.already_subscribed_error')
 
       render :new
     else
-      flash.now[:error] = t('feeds.add.flash.feed_not_found_error')
+      flash[:error] = t('feeds.add.flash.feed_not_found_error')
 
       render :new
     end

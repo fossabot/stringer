@@ -11,7 +11,7 @@ module Setup
 
     def create
       if no_password(params) || password_mismatch?(params)
-        flash.now[:error] = t('first_run.password.flash.passwords_dont_match')
+        flash[:error] = t('first_run.password.flash.passwords_dont_match')
 
         render :show
       else

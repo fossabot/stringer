@@ -15,7 +15,8 @@ class SessionsController < ApplicationController
 
       redirect_to redirect_uri
     else
-      flash.now[:error] = t('sessions.new.flash.wrong_password')
+      # flash[:error] = t('sessions.new.flash.wrong_password')
+      flash[:error] = @sign_in.errors.messages.values.join(', ')
 
       render :new
     end
