@@ -3,8 +3,6 @@
 class ApplicationController < ActionController::Base
   include HttpAcceptLanguage::AutoLocale
 
-  skip_before_action :verify_authenticity_token # TODO: enable later
-
   before_action :authenticate
 
   helper_method :current_user
