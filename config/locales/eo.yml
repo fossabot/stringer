@@ -6,7 +6,7 @@ eo:
     sorry: Bedaŭrinde, vi ankoraŭ ne legis ajnajn rakontojn.
   date:
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -120,6 +120,7 @@ eo:
         logged_out_successfully: Vi elsalutis.
     new:
       fields:
+        email: Email
         password: Pasvorto
         submit: Ensaluti
       flash:

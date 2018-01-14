@@ -6,7 +6,7 @@ de:
     sorry: Entschuldigung, du hast noch keine Geschichten gelesen.
   date:
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -120,6 +120,7 @@ de:
         logged_out_successfully: Du wurdest ausgeloggt!
     new:
       fields:
+        email: Email
         password: Passwort
         submit: Login
       flash:

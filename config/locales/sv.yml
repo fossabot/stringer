@@ -6,7 +6,7 @@ sv:
     sorry: Tyvärr, du har inte läst några berättelser än!
   date:
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -120,6 +120,7 @@ sv:
         logged_out_successfully: Du har blivit utloggad!
     new:
       fields:
+        email: Email
         password: Lösenord
         submit: Logga in
       flash:

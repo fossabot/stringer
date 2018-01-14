@@ -6,7 +6,7 @@ es:
     sorry: ¡Lo siento, aún no has leido ninguna historia!
   date:
     abbr_month_names:
-    - 
+    -
     - Ene
     - Feb
     - Mar
@@ -120,6 +120,7 @@ es:
         logged_out_successfully: ¡Has salido correctamente!
     new:
       fields:
+        email: Email
         password: Contraseña
         submit: Iniciar sesión
       flash:

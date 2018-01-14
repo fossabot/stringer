@@ -6,7 +6,7 @@ nl:
     sorry: Sorry, je hebt nog geen artikelen gelezen!
   date:
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -120,6 +120,7 @@ nl:
         logged_out_successfully: Je bent uitgelogd!
     new:
       fields:
+        email: Email
         password: Wachtwoord
         submit: Inloggen
       flash:
