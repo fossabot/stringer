@@ -34,6 +34,7 @@ gem 'http_accept_language'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'email_address'
+gem 'simple_form'
 gem 'whenever', require: false
 gem 'sidekiq', require: false
 gem 'newrelic_rpm'
