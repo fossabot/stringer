@@ -3,6 +3,8 @@
 class Feed < ApplicationRecord
   enum status: [:green, :yellow, :red]
 
+  belongs_to :user
+
   belongs_to :group, optional: true
 
   has_many :stories, -> { order('published desc') }, dependent: :destroy
