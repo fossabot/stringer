@@ -3,6 +3,8 @@
 class User < ApplicationRecord
   has_many :feeds, dependent: :destroy
 
+  has_many :stories, through: :feeds
+
   # validates :email, presence: true
   #
   # validates :email, uniqueness: { case_sensitive: false }
