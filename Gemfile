@@ -49,6 +49,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'spring-commands-rubocop'
   gem 'brakeman', require: false
+  gem 'active_record_doctor'
   gem 'license_finder', require: false
   gem 'bcrypt_pbkdf' # for rbnacl-libsodium
   gem 'rbnacl', '< 4.0' # for rbnacl-libsodium
