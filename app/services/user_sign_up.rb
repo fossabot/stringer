@@ -13,8 +13,6 @@ class UserSignUp
 
   validates :password, confirmation: true
 
-  validate :email_uniqueness
-
   def initialize(params)
     @email = params[:email]
     @password = params[:password]
@@ -33,11 +31,5 @@ class UserSignUp
     @user ||= User.new(email: email,
                        password: password,
                        password_confirmation: password_confirmation)
-  end
-
-  def email_uniqueness
-    if User.where('LOWER(email) = LOWER(?)', email).first
-      errors.add(:email, I18n.t('errors.messages.taken'))
-    end
   end
 end
