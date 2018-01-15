@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resource :sign_up, only: [:new, :create]
+
   namespace :setup do
     resource :password, only: [:show, :create]
 
