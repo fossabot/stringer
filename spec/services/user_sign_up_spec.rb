@@ -11,6 +11,8 @@ describe UserSignUp do
     end
 
     it { expect(subject.save).to eq(true) }
+
+    it { expect { subject.save }.to change { User.count }.from(0).to(1) }
   end
 
   context 'when email not user and password do not match confirmation' do
@@ -23,6 +25,8 @@ describe UserSignUp do
     it { expect(subject.save).to eq(false) }
 
     it { expect { subject.save }.to change { subject.errors.full_messages }.from([]).to(["Password confirmation doesn't match Password"]) }
+
+    it { expect { subject.save }.not_to change { User.count }.from(0) }
   end
 
   context 'when email used and password with confirmation match' do
@@ -37,5 +41,7 @@ describe UserSignUp do
     it { expect(subject.save).to eq(false) }
 
     it { expect { subject.save }.to change { subject.errors.full_messages }.from([]).to(['Email has already been taken']) }
+
+    it { expect { subject.save }.not_to change { User.count }.from(1) }
   end
 end
