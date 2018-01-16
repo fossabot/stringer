@@ -388,6 +388,7 @@ DEPENDENCIES
   rails (~> 5.2.0.beta2)
   rbnacl (< 4.0)
   rbnacl-libsodium
+  redis (~> 4.0)
   rspec-html-matchers (~> 0.7)
   rspec-its
   rspec-rails
