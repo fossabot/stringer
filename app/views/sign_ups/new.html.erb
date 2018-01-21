@@ -1,0 +1,26 @@
+<div class="setup" id="password-setup">
+  <h1><%= t('first_run.password.title') %> <span class="orange"><%= t('first_run.password.anti_social') %></span>.</h1>
+  <h2><%= t('first_run.password.subtitle') %></h2>
+  <hr />
+  <p><%= t('first_run.password.description') %></p>
+  <hr />
+
+  <%= form_with(url: sign_up_path, id: 'password_setup', local: true) do |form| %>
+    <div class="control-group">
+      <%= form.email_field('sign_up[email]', id: 'email', autofocus: true, required: true) %>
+      <i class="icon-envelope-alt field-icon"></i>
+      <%= form.label(:email, t('signup.new.fields.email'), id: 'email-label', class: 'field-label') %>
+    </div>
+    <div class="control-group">
+      <%= form.password_field('sign_up[password]', id: 'password', required: true) %>
+      <i class="icon-lock field-icon"></i>
+      <%= form.label(:password, t('signup.new.fields.password'), id: 'password-label', class: 'field-label') %>
+    </div>
+    <div class="control-group">
+      <%= form.password_field('sign_up[password_confirmation]', id: 'password', required: true) %>
+      <i class="icon-lock field-icon"></i>
+      <%= form.label(:password_confirmation, t('signup.new.fields.password_confirmation'), id: 'password-label', class: 'field-label') %>
+    </div>
+    <%= form.submit(t('signup.new.fields.submit'), id: 'submit', class: 'btn btn-primary pull-right') %>
+  <% end %>
+</div>
