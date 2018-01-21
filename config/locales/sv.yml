@@ -19,6 +19,13 @@ sv:
     - okt
     - nov
     - dec
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
   feeds:
     add:
       description: Klistra in URL:en till bloggen du vill läsa.

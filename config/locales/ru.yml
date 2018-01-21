@@ -19,6 +19,13 @@ ru:
     - окт.
     - нояб.
     - дек.
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
   feeds:
     add:
       description: Вставьте URL блога который Вы хотите читать.

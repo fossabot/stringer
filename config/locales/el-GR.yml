@@ -19,6 +19,13 @@ el-GR:
     - Οκτ
     - Νοε
     - Δεκ
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
   feeds:
     add:
       description: Εισάγετε εδώ την διεύθυνση του ιστολογίου που θέλετε να διαβάσετε.

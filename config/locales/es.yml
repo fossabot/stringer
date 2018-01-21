@@ -19,6 +19,13 @@ es:
     - Oct
     - Nov
     - Dic
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
   feeds:
     add:
       description: Pega la URL del blog que quieres leer

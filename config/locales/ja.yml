@@ -19,6 +19,13 @@ ja:
     - 10月
     - 11月
     - 12月
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
   feeds:
     add:
       description: 購読したいブログのURLをペーストして下さい

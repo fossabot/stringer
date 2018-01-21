@@ -19,6 +19,13 @@ pt:
     - Out
     - Nov
     - Dez
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
   feeds:
     add:
       description: Copie a URL do blog que deseja ler.
