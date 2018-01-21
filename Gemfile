@@ -70,6 +70,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'capybara-screenshot'
 
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
