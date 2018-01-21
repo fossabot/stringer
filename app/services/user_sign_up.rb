@@ -3,7 +3,7 @@
 class UserSignUp
   include ActiveModel::Validations
 
-  attr_reader :email, :password, :password_confirmation
+  attr_accessor :email, :password, :password_confirmation
 
   validates :email, presence: true
 
