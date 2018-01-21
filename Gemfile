@@ -65,8 +65,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'faker'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.15'
+  gem 'selenium-webdriver'
+  # Easy installation and use of chromedriver to run system tests with Chrome
+  gem 'chromedriver-helper'
 
-  gem "capybara", "~> 2.6"
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
   gem "timecop", "~> 0.8"
