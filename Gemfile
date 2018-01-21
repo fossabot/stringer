@@ -78,6 +78,7 @@ gem "feedjira", "~> 2.1.0"
 group :test do
   gem 'database_rewinder'
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
   gem 'rspec-its'
   gem 'simplecov', require: false
 end
