@@ -14,7 +14,7 @@ class SignUpsController < ApplicationController
 
       redirect_to news_index_path
     else
-      flash[:errors] = form.errors.full_messages.join(', ')
+      flash[:error] = form.errors.full_messages.join(', ')
 
       render :new
     end

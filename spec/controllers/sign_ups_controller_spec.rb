@@ -79,7 +79,7 @@ describe SignUpsController do
 
       it { should respond_with(:ok) }
 
-      it { should set_flash[:errors].to('error1 messages, error2 message') }
+      it { should set_flash[:error].to('error1 messages, error2 message') }
     end
   end
 end
