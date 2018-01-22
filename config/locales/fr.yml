@@ -38,7 +38,7 @@ fr:
   signout:
     destroy:
       flash:
-        logged_out_successfully: You have been signed out!
+        logged_out_successfully: Vous avez été déconnecté !
   validators:
     password:
       wrong: Ce n'est pas le bon mot de passe. Essayez encore.

@@ -38,7 +38,7 @@ nl:
   signout:
     destroy:
       flash:
-        logged_out_successfully: You have been signed out!
+        logged_out_successfully: Je bent uitgelogd!
   validators:
     password:
       wrong: Dat is het verkeerde wachtwoord. Probeer het opnieuw.

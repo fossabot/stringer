@@ -38,7 +38,7 @@ pt:
   signout:
     destroy:
       flash:
-        logged_out_successfully: You have been signed out!
+        logged_out_successfully: Você terminou a sessão!
   validators:
     password:
       wrong: Esta password está incorreta. Tente novamente.

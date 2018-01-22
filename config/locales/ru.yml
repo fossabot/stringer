@@ -38,7 +38,7 @@ ru:
   signout:
     destroy:
       flash:
-        logged_out_successfully: You have been signed out!
+        logged_out_successfully: Вы вышли из системы!
   validators:
     password:
       wrong: Это неправильный пароль. Попробуйте еще раз.

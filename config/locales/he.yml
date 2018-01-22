@@ -38,7 +38,7 @@ he:
   signout:
     destroy:
       flash:
-        logged_out_successfully: You have been signed out!
+        logged_out_successfully: יצאת מהמערכת!
   validators:
     password:
       wrong: סיסמה לא נכונה

@@ -38,7 +38,7 @@ zh-CN:
   signout:
     destroy:
       flash:
-        logged_out_successfully: You have been signed out!
+        logged_out_successfully: 你已经成功退出
   validators:
     password:
       wrong: 你输入的密码错误，麻烦重新输入啦
