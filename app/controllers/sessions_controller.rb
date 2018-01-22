@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
 
       redirect_to redirect_uri
     else
-      # flash[:error] = t('sessions.new.flash.wrong_password')
       flash[:error] = form.errors.messages.values.join(', ')
 
       render :new
