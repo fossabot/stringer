@@ -143,8 +143,6 @@ ja:
         email: Email
         password: パスワード
         submit: ログイン
-      flash:
-        wrong_password: パスワードが違います。もう一度試して下さい
       rss: RSS
       subtitle: おかえり
       title: Stringer speaks

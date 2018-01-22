@@ -143,8 +143,6 @@ sv:
         email: Email
         password: Lösenord
         submit: Logga in
-      flash:
-        wrong_password: Det där är fel lösenord. Försök igen.
       rss: RSS
       subtitle: Välkommen tillbaka, kompis.
       title: Stringer pratar

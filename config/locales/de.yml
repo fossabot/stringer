@@ -143,8 +143,6 @@ de:
         email: Email
         password: Passwort
         submit: Login
-      flash:
-        wrong_password: Das ist das falsche Passwort. Probiere es noch einmal.
       rss: RSS
       subtitle: Wilkommen zurück, Freund.
       title: Stringer sagt

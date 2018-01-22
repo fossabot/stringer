@@ -143,8 +143,6 @@ el-GR:
         email: Email
         password: Κωδικός
         submit: Είσοδος
-      flash:
-        wrong_password: Ο κωδικός είναι λάθος. Προσπάθησε ξανα.
       rss: RSS
       subtitle: Καλωσήρθες πίσω, φίλε.
       title: Το Stringer λέει

@@ -143,8 +143,6 @@ ru:
         email: Email
         password: Пароль
         submit: Войти
-      flash:
-        wrong_password: Это неправильный пароль. Попробуйте еще раз.
       rss: RSS
       subtitle: Добро пожаловать, друг.
       title: Stringer использует

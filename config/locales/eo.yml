@@ -143,8 +143,6 @@ eo:
         email: Email
         password: Pasvorto
         submit: Ensaluti
-      flash:
-        wrong_password: Malĝusta pasvorto. Reprovu.
       rss: RSS
       subtitle: Bonrevenon, amiko.
       title: Stringer parolas

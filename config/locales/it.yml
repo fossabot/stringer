@@ -143,8 +143,6 @@ it:
         email: Email
         password: Password
         submit: Login
-      flash:
-        wrong_password: Password incorretta. Riprova.
       rss: RSS
       subtitle: Benvenuto, amico.
       title: Stringer parla

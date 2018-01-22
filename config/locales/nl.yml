@@ -143,8 +143,6 @@ nl:
         email: Email
         password: Wachtwoord
         submit: Inloggen
-      flash:
-        wrong_password: Dat is het verkeerde wachtwoord. Probeer het opnieuw.
       rss: RSS
       subtitle: Welkom terug, vriend.
       title: Stringer spreekt

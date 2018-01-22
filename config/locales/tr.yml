@@ -143,8 +143,6 @@ tr:
         email: Email
         password: Sifre
         submit: Giris Yap
-      flash:
-        wrong_password: Sifre yanlis. Tekrar deneyiniz.
       rss: RSS
       subtitle: Tekrar hosgeldin, dostum.
       title: Stringer diyoki

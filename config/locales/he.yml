@@ -143,8 +143,6 @@ he:
         email: Email
         password: סיסמה
         submit: כניסה
-      flash:
-        wrong_password: סיסמה לא נכונה
       rss: RSS
       subtitle: ברוך שובך, חבר!
       title: סטרינגר עושה סדר ב

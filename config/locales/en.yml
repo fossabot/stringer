@@ -144,8 +144,6 @@ en:
         email: Email
         password: Password
         submit: Login
-      flash:
-        wrong_password: That's the wrong password. Try again.
       rss: RSS
       subtitle: Welcome back, friend.
       title: Stringer speaks
