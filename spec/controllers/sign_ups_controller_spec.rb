@@ -19,24 +19,25 @@ describe SignUpsController do
     context 'when user successful created' do
       let(:user) { create(:user, id: 42) }
 
-      let(:user_sign_up) { instance_double(UserSignUp, model: user, save: true) }
+      let(:form) { instance_double(UserSignUp, model: user, save: true) }
 
       before do
         #
-        # UserSignUp.new(resource_params).with(email: 'john.snow@example.com',
-        #                                      password: 'password',
-        #                                      password_confirmation: 'password')
+        # UserSignUp.new(resource_params)
+        #           .with(email: 'me@example.com',
+        #                 password: 'password',
+        #                 password_confirmation: 'password') # => form
         #
-        expect(UserSignUp).to receive(:new).with(permitter(email: 'john.snow@example.com',
+        expect(UserSignUp).to receive(:new).with(permitter(email: 'me@example.com',
                                                            password: 'password',
                                                            password_confirmation: 'password'))
-                                          .and_return(user_sign_up)
+                                          .and_return(form)
       end
 
       before do
         post :create, params: {
           sign_up: {
-            email: 'john.snow@example.com',
+            email: 'me@example.com',
             password: 'password',
             password_confirmation: 'password'
           },
@@ -52,18 +53,19 @@ describe SignUpsController do
     context 'when user not created' do
       let(:errors) { instance_double(ActiveModel::Errors, full_messages: ['error1 messages', 'error2 message']) }
 
-      let(:user_sign_up) { instance_double(UserSignUp, errors: errors, save: false) }
+      let(:form) { instance_double(UserSignUp, errors: errors, save: false) }
 
       before do
         #
-        # UserSignUp.new(resource_params).with(email: 'john.snow@example.com',
-        #                                      password: 'password',
-        #                                      password_confirmation: 'another-password')
+        # UserSignUp.new(resource_params)
+        #           .with(email: 'john.snow@example.com',
+        #                 password: 'password',
+        #                 password_confirmation: 'another-password') # => form
         #
         expect(UserSignUp).to receive(:new).with(permitter(email: 'john.snow@example.com',
                                                            password: 'password',
                                                            password_confirmation: 'another-password'))
-                                           .and_return(user_sign_up)
+                                           .and_return(form)
       end
 
       before do
