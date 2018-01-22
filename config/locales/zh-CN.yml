@@ -26,6 +26,15 @@ zh-CN:
         password: Password
         password_confirmation: Password confirmation
         submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Welcome back, friend.
+      title: Stringer speaks
+      fields:
+        email: Email
+        password: Password
+        submit: Sign In
   feeds:
     add:
       description: 请填入你想要订阅的供稿的地址

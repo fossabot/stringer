@@ -26,6 +26,15 @@ he:
         password: Password
         password_confirmation: Password confirmation
         submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Welcome back, friend.
+      title: Stringer speaks
+      fields:
+        email: Email
+        password: Password
+        submit: Sign In
   feeds:
     add:
       description: הכנס את הכתובת של הבלוג אשר ברצונך לקרוא
