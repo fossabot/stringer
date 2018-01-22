@@ -48,6 +48,6 @@ describe 'Sign in' do
 
     expect(current_path).to eq(sign_in_path)
 
-    expect(page).to have_content('Wrong password')
+    expect(page).to have_content(I18n.t('validators.password.wrong'))
   end
 end
