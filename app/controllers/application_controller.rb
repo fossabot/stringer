@@ -14,6 +14,6 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate
-    redirect_to new_session_path if !current_user
+    redirect_to new_sign_in_path if !current_user
   end
 end
