@@ -3,6 +3,8 @@
 require 'rails_helper'
 
 describe SignUpsController do
+  it { should be_an(ApplicationController) }
+
   it { should_not use_before_action(:authenticate) }
 
   describe '#new' do

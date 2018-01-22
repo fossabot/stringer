@@ -9,7 +9,7 @@ describe UserSignUp, type: :model do
                         password_confirmation: 'password')
   end
 
-  it { should be_a(ActiveModel::Validations) }
+  it { should be_an(ActiveModel::Validations) }
 
   it { should validate_presence_of(:email) }
 

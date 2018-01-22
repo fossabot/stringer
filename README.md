@@ -18,8 +18,9 @@ But it does have keyboard shortcuts and was made with love!
 ### Enhanced edition
 
 * Updated to latest Ruby
-* Ported to Rails from Sinatra
-* Ported to sidekiq from delayed_job
+* Ported from Sinatra to Rails
+* Ported from delayed_job to sidekiq
+* Use rails assets pipeline
 
 ## Environment
 
