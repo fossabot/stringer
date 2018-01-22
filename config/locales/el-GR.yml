@@ -35,6 +35,10 @@ el-GR:
         email: Email
         password: Password
         submit: Sign In
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: You have been signed out!
   feeds:
     add:
       description: Εισάγετε εδώ την διεύθυνση του ιστολογίου που θέλετε να διαβάσετε.

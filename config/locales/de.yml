@@ -35,6 +35,10 @@ de:
         email: Email
         password: Password
         submit: Sign In
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: You have been signed out!
   feeds:
     add:
       description: Füge die URL des Blogs, den du lesen willst, ein.

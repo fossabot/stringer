@@ -35,6 +35,10 @@ sv:
         email: Email
         password: Password
         submit: Sign In
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: You have been signed out!
   feeds:
     add:
       description: Klistra in URL:en till bloggen du vill läsa.

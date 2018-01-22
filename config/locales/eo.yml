@@ -35,6 +35,10 @@ eo:
         email: Email
         password: Password
         submit: Sign In
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: You have been signed out!
   feeds:
     add:
       description: Algluu la URL de la blogo kiu vi volas legi.

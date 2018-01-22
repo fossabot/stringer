@@ -35,6 +35,10 @@ he:
         email: Email
         password: Password
         submit: Sign In
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: You have been signed out!
   feeds:
     add:
       description: הכנס את הכתובת של הבלוג אשר ברצונך לקרוא
