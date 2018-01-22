@@ -138,9 +138,6 @@ zh-CN:
       gtfo: 是时候停止阅读
       rss_zero: 你已经达成了零RSS的任务&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: 你已经成功退出
     new:
       fields:
         email: Email

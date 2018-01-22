@@ -138,9 +138,6 @@ ja:
       gtfo: ブログを読むのをやめて
       rss_zero: RSS Zero&trade; に達しました
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: サインアウトしました！
     new:
       fields:
         email: Email

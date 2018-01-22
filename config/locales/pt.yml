@@ -138,9 +138,6 @@ pt:
       gtfo: Agora pare de ler blogs e
       rss_zero: Você alcançou Zero RSS&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Você terminou a sessão!
     new:
       fields:
         email: Email

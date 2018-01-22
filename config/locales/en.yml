@@ -139,9 +139,6 @@ en:
       gtfo: Now stop reading blogs and
       rss_zero: You've reached RSS Zero&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: You have been signed out!
     new:
       fields:
         email: Email

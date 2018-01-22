@@ -138,9 +138,6 @@ it:
       gtfo: Ora piantala di leggere blog e
       rss_zero: Hai raggiunto l'RSS Zero&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Hai effettuato logout correttamente!
     new:
       fields:
         email: Email

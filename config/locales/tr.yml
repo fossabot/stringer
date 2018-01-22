@@ -138,9 +138,6 @@ tr:
       gtfo: Simdi bloglari okumayi birak ve
       rss_zero: RSS beslemelerinizi sifirladiniz&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Cikis yaptiniz!
     new:
       fields:
         email: Email

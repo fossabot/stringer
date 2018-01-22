@@ -138,9 +138,6 @@ el-GR:
       gtfo: 'Τώρα σταμάτα να διαβάζεις ιστολόγια '
       rss_zero: Έχεις Μηδέν RSS Ειδήσεις
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Αποσυνδεθήκατε!
     new:
       fields:
         email: Email

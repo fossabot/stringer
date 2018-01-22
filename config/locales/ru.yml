@@ -138,9 +138,6 @@ ru:
       gtfo: Теперь прекратите читать блоги и
       rss_zero: Вы достигли RSS Zero&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Вы вышли из системы!
     new:
       fields:
         email: Email

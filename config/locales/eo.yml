@@ -138,9 +138,6 @@ eo:
       gtfo: Ĉesu legadon de blogoj kaj
       rss_zero: Vi atingis RSS-nul&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Vi elsalutis.
     new:
       fields:
         email: Email

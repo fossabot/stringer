@@ -138,9 +138,6 @@ he:
       gtfo: הפסק לקרוא בלוגים
       rss_zero:
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: יצאת מהמערכת!
     new:
       fields:
         email: Email

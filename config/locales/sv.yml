@@ -138,9 +138,6 @@ sv:
       gtfo: Sluta läsa bloggar nu och
       rss_zero: Du har nått RSS Noll&trade;
   sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Du har blivit utloggad!
     new:
       fields:
         email: Email
