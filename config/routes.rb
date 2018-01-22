@@ -35,8 +35,6 @@ Rails.application.routes.draw do
 
   resources :feed, only: :show
 
-  resource :session, only: [:new, :create, :destroy]
-
   resource :heroku, only: :show
 
   resource :debug, only: :show
