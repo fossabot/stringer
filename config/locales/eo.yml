@@ -143,9 +143,6 @@ eo:
         email: Email
         password: Pasvorto
         submit: Ensaluti
-      rss: RSS
-      subtitle: Bonrevenon, amiko.
-      title: Stringer parolas
   starred:
     next: Sekva
     of: de

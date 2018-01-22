@@ -143,9 +143,6 @@ fr:
         email: Email
         password: Mot de passe
         submit: Identifiant
-      rss: RSS
-      subtitle: Content de vous revoir, l'ami.
-      title: Stringer parle le
   starred:
     next: Suivant
     of: de

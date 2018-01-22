@@ -143,9 +143,6 @@ ru:
         email: Email
         password: Пароль
         submit: Войти
-      rss: RSS
-      subtitle: Добро пожаловать, друг.
-      title: Stringer использует
   starred:
     next: Следующий
     of: из

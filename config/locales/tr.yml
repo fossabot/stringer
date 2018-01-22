@@ -143,9 +143,6 @@ tr:
         email: Email
         password: Sifre
         submit: Giris Yap
-      rss: RSS
-      subtitle: Tekrar hosgeldin, dostum.
-      title: Stringer diyoki
   starred:
     next:
     of:

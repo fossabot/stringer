@@ -144,9 +144,6 @@ en:
         email: Email
         password: Password
         submit: Login
-      rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
   starred:
     next: Next
     of: of

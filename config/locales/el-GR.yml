@@ -143,9 +143,6 @@ el-GR:
         email: Email
         password: Κωδικός
         submit: Είσοδος
-      rss: RSS
-      subtitle: Καλωσήρθες πίσω, φίλε.
-      title: Το Stringer λέει
   starred:
     next:
     of:

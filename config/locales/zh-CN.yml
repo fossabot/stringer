@@ -143,9 +143,6 @@ zh-CN:
         email: Email
         password: 密码
         submit: 登录
-      rss: RSS
-      subtitle: 欢迎回来，我的朋友。
-      title: Stringer speaks
   starred:
     next: 下一页
     of: of

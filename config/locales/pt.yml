@@ -143,9 +143,6 @@ pt:
         email: Email
         password: Password
         submit: Entrar
-      rss: RSS
-      subtitle: Bem vindo novamente, amigo.
-      title: Stringer fala
   starred:
     next:
     of:

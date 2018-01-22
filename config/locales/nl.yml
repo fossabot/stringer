@@ -143,9 +143,6 @@ nl:
         email: Email
         password: Wachtwoord
         submit: Inloggen
-      rss: RSS
-      subtitle: Welkom terug, vriend.
-      title: Stringer spreekt
   starred:
     next: Volgende
     of: van

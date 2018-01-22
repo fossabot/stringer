@@ -143,9 +143,6 @@ sv:
         email: Email
         password: Lösenord
         submit: Logga in
-      rss: RSS
-      subtitle: Välkommen tillbaka, kompis.
-      title: Stringer pratar
   starred:
     next: Nästa
     of: av

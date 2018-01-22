@@ -143,9 +143,6 @@ es:
         email: Email
         password: Contraseña
         submit: Iniciar sesión
-      rss: RSS
-      subtitle: Bienvenido de vuelta, amigo.
-      title: Stringer habla
   starred:
     next: Siguiente
     of: de
