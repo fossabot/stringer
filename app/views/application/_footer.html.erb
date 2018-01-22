@@ -3,7 +3,7 @@
     <div class="span6">
       <ul class="footer-links">
         <% if current_user %>
-          <li><%= link_to t('layout.logout'), session_path, method: :delete %></li>
+          <li><%= link_to t('layout.logout'), sign_out_path, method: :delete %></li>
           <li class="muted">·</li>
           <li><%= link_to t('layout.import'), feeds_import_path %></li>
           <li class="muted">·</li>
