@@ -6,17 +6,17 @@ class SessionsController < ApplicationController
   before_action :setup_account
 
   def create
-    @sign_in = UserSignIn.new(resource_params)
+    form = UserSignIn.new(resource_params)
 
-    if @sign_in.save
-      session[:user_id] = @sign_in.model.id
+    if form.save
+      session[:user_id] = form.model.id
 
       redirect_uri = session.delete(:redirect_to) || '/'
 
       redirect_to redirect_uri
     else
       # flash[:error] = t('sessions.new.flash.wrong_password')
-      flash[:error] = @sign_in.errors.messages.values.join(', ')
+      flash[:error] = form.errors.messages.values.join(', ')
 
       render :new
     end
