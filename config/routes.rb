@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resource :sign_in, only: [:new, :create]
 
+  resource :sign_out, only: :destroy
+
   namespace :setup do
     resource :password, only: [:show, :create]
 
