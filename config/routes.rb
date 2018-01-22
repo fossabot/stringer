@@ -3,6 +3,8 @@
 Rails.application.routes.draw do
   resource :sign_up, only: [:new, :create]
 
+  resource :sign_in, only: [:new, :create]
+
   namespace :setup do
     resource :password, only: [:show, :create]
 
