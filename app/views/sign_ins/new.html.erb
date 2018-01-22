@@ -1,20 +1,20 @@
 <div class="setup" id="feed-setup">
-  <h1><%= t('sessions.new.title') %> <span class="orange"><%= t('sessions.new.rss') %></span>.</h1>
-  <h2><%= t('sessions.new.subtitle') %></h2>
+  <h1><%= t('signin.new.title') %> <span class="orange"><%= t('signin.new.rss') %></span>.</h1>
+  <h2><%= t('signin.new.subtitle') %></h2>
 
   <hr />
 
-  <%= form_with(url: session_path, id: 'login', local: true) do |form| %>
+  <%= form_with(url: sign_in_path, id: 'login', local: true) do |form| %>
     <div class="control-group">
       <%= form.email_field('sign_in[email]', id: 'email', autofocus: true, required: true) %>
       <i class="icon-envelope-alt field-icon"></i>
-      <%= form.label(:email, t('sessions.new.fields.email'), id: 'email-label', class: 'field-label') %>
+      <%= form.label(:email, t('signin.new.fields.email'), id: 'email-label', class: 'field-label') %>
     </div>
     <div class="control-group">
       <%= form.password_field('sign_in[password]', id: 'password', required: true) %>
       <i class="icon-lock field-icon"></i>
-      <%= form.label(:password, t('sessions.new.fields.password'), id: 'password-label', class: 'field-label') %>
+      <%= form.label(:password, t('signin.new.fields.password'), id: 'password-label', class: 'field-label') %>
     </div>
-    <%= form.submit(t('sessions.new.fields.submit'), class: 'btn btn-primary pull-right') %>
+    <%= form.submit(t('signin.new.fields.submit'), class: 'btn btn-primary pull-right') %>
   <% end %>
 </div>
