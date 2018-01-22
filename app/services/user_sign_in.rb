@@ -3,15 +3,15 @@
 class UserSignIn
   include ActiveModel::Validations
 
-  attr_reader :email, :password
+  attr_accessor :email, :password, :model
 
   validates :email, presence: true
 
   validates :password, presence: true
 
-  validate :user_presence
+  validates :model, presence: { message: 'User with given email not found' }
 
-  validate :user_password
+  validates :password, password: true
 
   def initialize(params)
     @email = params[:email]
@@ -24,17 +24,5 @@ class UserSignIn
 
   def model
     @user ||= User.where('LOWER(email) = LOWER(?)', email).first
-  end
-
-  private
-
-  def user_presence
-    errors.add(:email, 'User with given email not found') if !model
-  end
-
-  def user_password
-    return if !model
-
-    errors.add(:password, 'Wrong password') if !model.authenticate(password)
   end
 end
