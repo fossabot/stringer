@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class SessionsController < ApplicationController
-  skip_before_action :authenticate, only: [:new, :create]
+  skip_before_action :authenticate
 
   before_action :setup_account
 
@@ -19,14 +19,6 @@ class SessionsController < ApplicationController
 
       render :new
     end
-  end
-
-  def destroy
-    flash[:success] = t('sessions.destroy.flash.logged_out_successfully')
-
-    session[:user_id] = nil
-
-    redirect_to root_path
   end
 
   private
