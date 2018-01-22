@@ -39,6 +39,9 @@ zh-CN:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: 你输入的密码错误，麻烦重新输入啦
   feeds:
     add:
       description: 请填入你想要订阅的供稿的地址

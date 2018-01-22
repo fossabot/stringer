@@ -39,6 +39,9 @@ de:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Das ist das falsche Passwort. Probiere es noch einmal.
   feeds:
     add:
       description: Füge die URL des Blogs, den du lesen willst, ein.

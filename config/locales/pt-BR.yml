@@ -39,6 +39,9 @@ pt-BR:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Esta senha está incorreta. Tente novamente.
   feeds:
     add:
       description: Cole a URL do blog que você quer ler.

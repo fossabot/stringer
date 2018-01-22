@@ -39,6 +39,9 @@ ja:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: パスワードが違います。もう一度試して下さい
   feeds:
     add:
       description: 購読したいブログのURLをペーストして下さい

@@ -39,6 +39,9 @@ tr:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Sifre yanlis. Tekrar deneyiniz.
   feeds:
     add:
       description: Okumak isteginiz blogun URL'sini yapistirin.

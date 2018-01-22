@@ -39,6 +39,9 @@ el-GR:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Ο κωδικός είναι λάθος. Προσπάθησε ξανα.
   feeds:
     add:
       description: Εισάγετε εδώ την διεύθυνση του ιστολογίου που θέλετε να διαβάσετε.

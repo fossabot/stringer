@@ -39,6 +39,9 @@ nl:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Dat is het verkeerde wachtwoord. Probeer het opnieuw.
   feeds:
     add:
       description: Plak de URL van de blog die je wilt lezen.

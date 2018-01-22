@@ -39,6 +39,9 @@ ru:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Это неправильный пароль. Попробуйте еще раз.
   feeds:
     add:
       description: Вставьте URL блога который Вы хотите читать.

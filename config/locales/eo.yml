@@ -39,6 +39,9 @@ eo:
     destroy:
       flash:
         logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: Malĝusta pasvorto. Reprovu.
   feeds:
     add:
       description: Algluu la URL de la blogo kiu vi volas legi.
