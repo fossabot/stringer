@@ -29,8 +29,8 @@ eo:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Bonrevenon, amiko.
+      title: Stringer parolas
       fields:
         email: Email
         password: Password

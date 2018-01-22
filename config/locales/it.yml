@@ -29,8 +29,8 @@ it:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Benvenuto, amico.
+      title: Stringer parla
       fields:
         email: Email
         password: Password

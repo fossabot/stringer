@@ -29,7 +29,7 @@ ja:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
+      subtitle: おかえり
       title: Stringer speaks
       fields:
         email: Email

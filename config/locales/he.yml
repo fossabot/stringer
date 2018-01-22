@@ -29,8 +29,8 @@ he:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: ברוך שובך, חבר!
+      title: סטרינגר עושה סדר ב
       fields:
         email: Email
         password: Password

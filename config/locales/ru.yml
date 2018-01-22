@@ -29,8 +29,8 @@ ru:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Добро пожаловать, друг.
+      title: Stringer использует
       fields:
         email: Email
         password: Password

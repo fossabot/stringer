@@ -29,8 +29,8 @@ fr:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Content de vous revoir, l'ami.
+      title: Stringer parle le
       fields:
         email: Email
         password: Password

@@ -29,7 +29,7 @@ zh-CN:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
+      subtitle: 欢迎回来，我的朋友。
       title: Stringer speaks
       fields:
         email: Email

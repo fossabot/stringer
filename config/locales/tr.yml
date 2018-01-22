@@ -29,8 +29,8 @@ tr:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Tekrar hosgeldin, dostum.
+      title: Stringer diyoki
       fields:
         email: Email
         password: Password

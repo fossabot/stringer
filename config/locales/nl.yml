@@ -29,8 +29,8 @@ nl:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Welkom terug, vriend.
+      title: Stringer spreekt
       fields:
         email: Email
         password: Password

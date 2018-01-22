@@ -29,8 +29,8 @@ el-GR:
   signin:
     new:
       rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
+      subtitle: Καλωσήρθες πίσω, φίλε.
+      title: Το Stringer λέει
       fields:
         email: Email
         password: Password
