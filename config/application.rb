@@ -27,7 +27,7 @@ module Stringer
     # -- all .rb files in that directory are automatically loaded.
 
     # Don't generate system test files.
-    config.generators.system_tests = nil
+    # config.generators.system_tests = nil
 
     config.i18n.available_locales = ['en', 'de', 'el-GR', 'eo', 'es', 'fr',
                                      'he', 'it', 'ja', 'nl', 'pt-BR', 'pt',
@@ -36,6 +36,7 @@ module Stringer
     config.active_job.queue_adapter = :sidekiq
 
     config.autoload_paths << Rails.root.join('app', 'services')
+    config.autoload_paths << Rails.root.join('app', 'validators')
 
     config.autoload_paths << Rails.root.join('app', 'commands', 'feeds')
     config.autoload_paths << Rails.root.join('app', 'commands', 'stories')
