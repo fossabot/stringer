@@ -2,42 +2,60 @@
 
 require 'rails_helper'
 
-describe UserSignIn do
-  context 'when user with given email found and password correct' do
-    let!(:user) { create(:user, email: 'me@example.com', password: 'password') }
-
-    subject { described_class.new(email: 'me@example.com', password: 'password') }
-
-    it { expect(subject.save).to eq(true) }
-
-    it { expect { subject.save }.not_to change { subject.errors.messages }.from({}) }
+describe UserSignIn, type: :model do
+  subject do
+    described_class.new(email: 'me@example.com',
+                        password: 'password')
   end
 
-  context 'when user with given email found and password wrong' do
-    let!(:user) { create(:user, email: 'me@example.com', password: 'password') }
+  it { should be_an(ActiveModel::Validations) }
 
-    subject { described_class.new(email: 'me@example.com', password: 'wrong-password') }
+  it { should validate_presence_of(:email) }
 
-    it { expect(subject.save).to eq(false) }
+  it { should validate_presence_of(:password) }
 
-    it { expect { subject.save }.to change { subject.errors.messages }.from({}).to(password: ['Wrong password']) }
+  it { should validate_presence_of(:model).with_message('User with given email not found') }
+
+  pending { should validate_password(:password) }
+
+  describe '#save' do
+    context 'when form valid' do
+      before { expect(subject).to receive(:valid?).and_return(true) }
+
+      it { expect(subject.save).to eq(true) }
+    end
+
+    context 'when form not valid' do
+      before { expect(subject).to receive(:valid?).and_return(false) }
+
+      it { expect(subject.save).to eq(false) }
+    end
   end
 
-  context 'when user with given email not found' do
-    subject { described_class.new(email: 'me@example.com', password: 'password') }
+  describe '#model' do
+    context 'when @user not set' do
+      let(:user) { instance_double(User) }
 
-    it { expect(subject.save).to eq(false) }
+      before do
+        #
+        # User.where('LOWER(email) = LOWER(?)', email).first # => user
+        #
+        expect(User).to receive(:where).with('LOWER(email) = LOWER(?)', 'me@example.com') do
+          double.tap do |a|
+            expect(a).to receive(:first).and_return(user)
+          end
+        end
+      end
 
-    it { expect { subject.save }.to change { subject.errors.messages }.from({}).to(email: ['User with given email not found']) }
-  end
+      it { expect(subject.model).to eq(user) }
+    end
 
-  context 'when user try sign in with UPPER case email' do
-    let!(:user) { create(:user, email: 'me@example.com', password: 'password') }
+    context 'when @user is set' do
+      let(:user) { instance_double(User) }
 
-    subject { described_class.new(email: 'ME@EXAMPLE.COM', password: 'password') }
+      before { subject.instance_variable_set(:@user, user) }
 
-    it { expect(subject.save).to eq(true) }
-
-    it { expect { subject.save }.not_to change { subject.errors.messages }.from({}) }
+      it { expect(subject.model).to eq(user) }
+    end
   end
 end
