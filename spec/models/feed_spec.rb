@@ -15,7 +15,9 @@ describe Feed do
 
   it { should have_many(:unread_stories).conditions(is_read: false).order('published desc').class_name('Story') }
 
-  it { should validate_uniqueness_of(:url) }
+  it { should validate_presence_of(:url) }
+
+  it { should validate_uniqueness_of(:url).scoped_to(:user_id) }
 
   describe '#status_bubble' do
     context 'when status red and any story exist' do
