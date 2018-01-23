@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'nokogiri'
-
 class ExportToOpml
   def initialize(feeds)
     @feeds = feeds
@@ -11,7 +9,7 @@ class ExportToOpml
     builder = Nokogiri::XML::Builder.new do |xml|
       xml.opml(version: '1.0') do
         xml.head do
-          xml.title 'Feeds from Stringer'
+          xml.title 'Feeds from Stringer. Enhanced.'
         end
         xml.body do
           @feeds.each do |feed|
