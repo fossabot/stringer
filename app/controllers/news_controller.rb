@@ -2,6 +2,10 @@
 
 class NewsController < ApplicationController
   def index
-    @unread_stories = StoryRepository.unread(params[:page])
+    @unread_stories = current_user.stories
+                                  .where(is_read: false)
+                                  .order(published: :desc)
+                                  .includes(:feed)
+                                  .page(params[:page]).per(20)
   end
 end
