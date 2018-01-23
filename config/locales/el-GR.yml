@@ -33,8 +33,8 @@ el-GR:
       title: Το Stringer λέει
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Κωδικός
+        submit: Είσοδος
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ el-GR:
       go_make: και δράσε
       gtfo: 'Τώρα σταμάτα να διαβάζεις ιστολόγια '
       rss_zero: Έχεις Μηδέν RSS Ειδήσεις
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Κωδικός
-        submit: Είσοδος
   starred:
     next:
     of:

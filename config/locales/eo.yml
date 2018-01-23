@@ -33,8 +33,8 @@ eo:
       title: Stringer parolas
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Pasvorto
+        submit: Ensaluti
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ eo:
       go_make: Iru fari ion!
       gtfo: Ĉesu legadon de blogoj kaj
       rss_zero: Vi atingis RSS-nul&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Pasvorto
-        submit: Ensaluti
   starred:
     next: Sekva
     of: de

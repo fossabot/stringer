@@ -33,8 +33,8 @@ zh-CN:
       title: Stringer speaks
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: 密码
+        submit: 登录
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ zh-CN:
       go_make: 去做些其它事了
       gtfo: 是时候停止阅读
       rss_zero: 你已经达成了零RSS的任务&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: 密码
-        submit: 登录
   starred:
     next: 下一页
     of: of

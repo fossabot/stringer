@@ -33,8 +33,8 @@ he:
       title: סטרינגר עושה סדר ב
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: סיסמה
+        submit: כניסה
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ he:
       go_make: ולך תעשה משהו חיוני
       gtfo: הפסק לקרוא בלוגים
       rss_zero:
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: סיסמה
-        submit: כניסה
   starred:
     next:
     of:

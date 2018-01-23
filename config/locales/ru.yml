@@ -33,8 +33,8 @@ ru:
       title: Stringer использует
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Пароль
+        submit: Войти
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ ru:
       go_make: сделайте что-то полезное
       gtfo: Теперь прекратите читать блоги и
       rss_zero: Вы достигли RSS Zero&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Пароль
-        submit: Войти
   starred:
     next: Следующий
     of: из

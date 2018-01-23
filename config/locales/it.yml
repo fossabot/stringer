@@ -34,7 +34,7 @@ it:
       fields:
         email: Email
         password: Password
-        submit: Sign In
+        submit: Login
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ it:
       go_make: vai a fare altro
       gtfo: Ora piantala di leggere blog e
       rss_zero: Hai raggiunto l'RSS Zero&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Password
-        submit: Login
   starred:
     next: Prossimo
     of: di

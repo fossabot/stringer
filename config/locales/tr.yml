@@ -33,8 +33,8 @@ tr:
       title: Stringer diyoki
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Sifre
+        submit: Giris Yap
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ tr:
       go_make: git birseyler uret
       gtfo: Simdi bloglari okumayi birak ve
       rss_zero: RSS beslemelerinizi sifirladiniz&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Sifre
-        submit: Giris Yap
   starred:
     next:
     of:

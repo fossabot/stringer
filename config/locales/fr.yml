@@ -33,8 +33,8 @@ fr:
       title: Stringer parle le
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Mot de passe
+        submit: Identifiant
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ fr:
       go_make: allez faire quelque chose
       gtfo: Maintenant cessez de lire et
       rss_zero: Vous avez atteint RSS Zéro&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Mot de passe
-        submit: Identifiant
   starred:
     next: Suivant
     of: de

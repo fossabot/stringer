@@ -33,8 +33,8 @@ sv:
       title: Stringer pratar
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Lösenord
+        submit: Logga in
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ sv:
       go_make: gör nånting
       gtfo: Sluta läsa bloggar nu och
       rss_zero: Du har nått RSS Noll&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Lösenord
-        submit: Logga in
   starred:
     next: Nästa
     of: av

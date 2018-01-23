@@ -33,8 +33,8 @@ es:
       title: Stringer habla
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: Contraseña
+        submit: Iniciar sesión
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ es:
       go_make: ve a hacer algo
       gtfo: Ahora deja de leer tus blogs y
       rss_zero: Has alcanzado RSS Zero&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Contraseña
-        submit: Iniciar sesión
   starred:
     next: Siguiente
     of: de

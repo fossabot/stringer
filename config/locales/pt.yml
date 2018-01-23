@@ -34,7 +34,7 @@ pt:
       fields:
         email: Email
         password: Password
-        submit: Sign In
+        submit: Entrar
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ pt:
       go_make: vá fazer alguma coisa
       gtfo: Agora pare de ler blogs e
       rss_zero: Você alcançou Zero RSS&trade;
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: Password
-        submit: Entrar
   starred:
     next:
     of:

@@ -33,8 +33,8 @@ ja:
       title: Stringer speaks
       fields:
         email: Email
-        password: Password
-        submit: Sign In
+        password: パスワード
+        submit: ログイン
   signout:
     destroy:
       flash:
@@ -137,12 +137,6 @@ ja:
       go_make: 何か作ろう
       gtfo: ブログを読むのをやめて
       rss_zero: RSS Zero&trade; に達しました
-  sessions:
-    new:
-      fields:
-        email: Email
-        password: パスワード
-        submit: ログイン
   starred:
     next: 次
     of: の
