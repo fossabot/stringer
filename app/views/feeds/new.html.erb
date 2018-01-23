@@ -7,13 +7,12 @@
   <hr />
   <p><%= t('feeds.add.description') %></p>
   <hr />
-  <form id="add-feed-setup" method="POST" action="/feeds">
+  <%= form_with(url: feeds_path, id: 'add-feed-setup', local: true) do |form| %>
     <div class="control-group">
-      <input name="feed_url" id="feed-url" type="text" value="<%= @feed_url %>" autofocus/>
-      <i class="icon-rss field-icon"></i>
-      <label id="feed_url-label" class="field-label" for="feed_url"><%= t('feeds.add.fields.feed_url') %></label>
+      <%= form.text_field(:feed_url, id: 'feed-url', value: @feed_url, autofocus: true, required: true) %>
+      <i class="icon-envelope-alt field-icon"></i>
+      <%= form.label(:feed_url, t('feeds.add.fields.feed_url'), id: 'feed_url-label', class: 'field-label') %>
     </div>
-
-    <input type="submit" id="submit" class="btn btn-primary pull-right" value="<%= t('feeds.add.fields.submit') %>"/>
-  </form>
+    <%= form.submit(t('feeds.add.fields.submit'), id: 'submit', class: 'btn btn-primary pull-right') %>
+  <% end %>
 </div>
