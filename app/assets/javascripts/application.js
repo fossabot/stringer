@@ -26,6 +26,7 @@
 //= require jquery.visible.js
 //= require underscore.js
 //= require backbone.js
+//= require backbone_rails_sync
 
 _.templateSettings = {
     interpolate: /\{\{\=(.+?)\}\}/g,
