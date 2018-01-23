@@ -11,6 +11,11 @@
           <li class="muted">·</li>
           <li><a href="#shortcuts" data-toggle="modal"><i class="icon-keyboard"></i></a></li>
           <li class="muted">·</li>
+        <% else %>
+          <li><%= link_to t('layout.sign_in'), new_sign_in_path %></li>
+          <li class="muted">·</li>
+          <li><%= link_to t('layout.sign_up'), new_sign_up_path %></li>
+          <li class="muted">·</li>
         <% end %>
 
         <li><a href="https://github.com/swanson/stringer"><%= t('layout.support') %></a></li>
