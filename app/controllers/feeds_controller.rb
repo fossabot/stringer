@@ -31,11 +31,11 @@ class FeedsController < ApplicationController
   end
 
   def edit
-    @feed = FeedRepository.fetch(params[:id])
+    @feed = current_user.feeds.find(params[:id])
   end
 
   def update
-    feed = FeedRepository.fetch(params[:id])
+    feed = current_user.feeds.find(params[:id])
 
     FeedRepository.update_feed(feed, params[:feed_name], params[:feed_url], params[:group_id])
 

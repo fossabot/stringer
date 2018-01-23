@@ -50,21 +50,4 @@ describe FeedRepository do
       expect(feed.url).to eq "example.com/feed"
     end
   end
-
-  describe "fetch" do
-    let(:feed) { Feed.new(id: 1) }
-
-    it "finds by id" do
-      expect(Feed).to receive(:find).with(feed.id).and_return(feed)
-      FeedRepository.fetch(feed.id)
-    end
-
-    it "returns found feed" do
-      allow(Feed).to receive(:find).with(feed.id).and_return(feed)
-
-      result = FeedRepository.fetch(feed.id)
-
-      expect(result).to eq feed
-    end
-  end
 end
