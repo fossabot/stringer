@@ -91,6 +91,8 @@ fr:
     export: Export
     hey: Hé !
     import: Import
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Déconnection
     support: Aide
     title: stringer | votre compagnon rss

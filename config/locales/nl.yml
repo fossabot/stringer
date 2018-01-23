@@ -91,6 +91,8 @@ nl:
     export: Exporteren
     hey: Hé!
     import: Importeren
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Uitloggen
     support: Ondersteuning
     title: stringer | jouw rss-buddy

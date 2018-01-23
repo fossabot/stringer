@@ -91,6 +91,8 @@ eo:
     export: Eksporti
     hey: He!
     import: Importi
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Elsaluti
     support: Subteno
     title: stringer | via RSS amiko

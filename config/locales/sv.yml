@@ -91,6 +91,8 @@ sv:
     export: Exportera
     hey: Hallå!
     import: Importera
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Logga ut
     support: Hjälp
     title: stringer | din rss-polare

@@ -91,6 +91,8 @@ tr:
     export: Disa Aktar
     hey: Hey!
     import:
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Cikis Yap
     support: Destekle
     title: stringer | rss kankan

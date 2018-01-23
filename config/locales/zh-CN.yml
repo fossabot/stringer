@@ -91,6 +91,8 @@ zh-CN:
     export: 导出
     hey: 喂！
     import: 导入
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: 退出
     support: 支持
     title: stringer | your rss buddy

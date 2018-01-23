@@ -92,6 +92,8 @@ en:
     export: Export
     hey: Hey!
     import: Import
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Logout
     support: Support
     title: stringer | your rss buddy

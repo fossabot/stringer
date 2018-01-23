@@ -91,6 +91,8 @@ ru:
     export: Экспортировать
     hey: Привет!
     import:
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Выйти
     support: Помощь
     title: stringer | your rss buddy

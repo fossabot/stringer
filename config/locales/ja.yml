@@ -91,6 +91,8 @@ ja:
     export: 書き出し
     hey: やぁ！
     import: 読み込み
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: ログアウト
     support: サポート
     title: stringer | your rss buddy

@@ -91,6 +91,8 @@ es:
     export: Exportar
     hey: ¡Oye!
     import: Importar
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Salir
     support: Soporte
     title: stringer | tu compadre de rss

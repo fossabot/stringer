@@ -91,6 +91,8 @@ el-GR:
     export: Εξαγωγή
     hey: Γειά!
     import:
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Έξοδος
     support: Υποστήριξη
     title: stringer | ο φίλος των rss σου
