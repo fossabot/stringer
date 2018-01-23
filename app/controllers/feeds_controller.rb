@@ -11,7 +11,7 @@ class FeedsController < ApplicationController
 
   def create
     @feed_url = params[:feed_url]
-    feed = AddNewFeed.add(@feed_url)
+    feed = AddNewFeed.add(current_user, @feed_url)
 
     if feed && feed.valid?
       FetchFeedJob.perform_later(feed)
