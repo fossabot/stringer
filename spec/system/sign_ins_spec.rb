@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe 'Sign in' do
+describe 'Sign ins' do
   it 'when user successfully sign ins' do
     create(:user, email: 'me@example.com', password: 'password')
 
