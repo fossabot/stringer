@@ -8,7 +8,7 @@ describe 'Sign in' do
 
     fill_in 'sign_in[email]', with: 'me@example.com'
     fill_in 'sign_in[password]', with: 'password'
-    click_button 'Sign In'
+    click_button I18n.t('signin.new.fields.submit')
 
     expect(current_path).to eq(news_index_path)
   end
@@ -20,7 +20,7 @@ describe 'Sign in' do
 
     fill_in 'sign_in[email]', with: 'ME@EXAMPLE.COM'
     fill_in 'sign_in[password]', with: 'password'
-    click_button 'Sign In'
+    click_button I18n.t('signin.new.fields.submit')
 
     expect(current_path).to eq(news_index_path)
   end
@@ -30,7 +30,7 @@ describe 'Sign in' do
 
     fill_in 'sign_in[email]', with: 'me@example.com'
     fill_in 'sign_in[password]', with: 'password'
-    click_button 'Sign In'
+    click_button I18n.t('signin.new.fields.submit')
 
     expect(current_path).to eq(sign_in_path)
 
@@ -44,7 +44,7 @@ describe 'Sign in' do
 
     fill_in 'sign_in[email]', with: 'me@example.com'
     fill_in 'sign_in[password]', with: 'wrong-password'
-    click_button 'Sign In'
+    click_button I18n.t('signin.new.fields.submit')
 
     expect(current_path).to eq(sign_in_path)
 
