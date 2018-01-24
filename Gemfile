@@ -20,7 +20,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -34,6 +34,10 @@ gem 'http_accept_language'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'email_address'
+gem 'feedbag'
+gem 'feedjira', '~> 2.1.0'
+# gem 'feedjira', '~> 3.0.0.beta1'
+# gem 'pundit'
 gem 'whenever', require: false
 gem 'sidekiq', require: false
 gem 'newrelic_rpm'
@@ -49,7 +53,9 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'spring-commands-rubocop'
   gem 'brakeman', require: false
+  gem 'active_record_doctor'
   gem 'license_finder', require: false
+  gem 'libyear-bundler', require: false
   gem 'bcrypt_pbkdf' # for rbnacl-libsodium
   gem 'rbnacl', '< 4.0' # for rbnacl-libsodium
   gem 'rbnacl-libsodium' # for ssh-ed25519 support
@@ -64,19 +70,22 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'faker'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.15'
+  gem 'selenium-webdriver'
+  # Easy installation and use of chromedriver to run system tests with Chrome
+  gem 'chromedriver-helper'
+  gem 'capybara-screenshot'
 
-  gem "capybara", "~> 2.6"
   gem "rack-test", "~> 0.6"
   gem "rspec-html-matchers", "~> 0.7"
   gem "timecop", "~> 0.8"
 end
 
-gem "feedbag", "~> 0.9.5"
-gem "feedjira", "~> 2.1.0"
-
 group :test do
   gem 'database_rewinder'
   gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
   gem 'rspec-its'
   gem 'simplecov', require: false
 end

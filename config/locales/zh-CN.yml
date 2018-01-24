@@ -6,7 +6,7 @@ zh-CN:
     sorry: 呃，你现在还没有已经读过的故事
   date:
     abbr_month_names:
-    - 
+    -
     - 一月
     - 二月
     - 三月
@@ -19,6 +19,29 @@ zh-CN:
     - 十月
     - 十一月
     - 十二月
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: 欢迎回来，我的朋友。
+      title: Stringer speaks
+      fields:
+        email: Email
+        password: 密码
+        submit: 登录
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: 你已经成功退出
+  validators:
+    password:
+      wrong: 你输入的密码错误，麻烦重新输入啦
   feeds:
     add:
       description: 请填入你想要订阅的供稿的地址
@@ -32,11 +55,11 @@ zh-CN:
       title: 想要添加新内容？
     edit:
       fields:
-        feed_name: 
-        feed_url: 
-        submit: 
+        feed_name:
+        feed_url:
+        submit:
       flash:
-        updated_successfully: 
+        updated_successfully:
     index:
       add: 添加
       add_some_feeds: 你应该%{add}一些订阅哟~
@@ -68,6 +91,8 @@ zh-CN:
     export: 导出
     hey: 喂！
     import: 导入
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: 退出
     support: 支持
     title: stringer | your rss buddy
@@ -97,7 +122,7 @@ zh-CN:
       keys:
         a: 添加新订阅
         bv: 转到原网址
-        f: 
+        f:
         jk: 下一个/上一个故事
         left: 上一页
         m: 将一个条目标为已读/未读
@@ -114,19 +139,6 @@ zh-CN:
       go_make: 去做些其它事了
       gtfo: 是时候停止阅读
       rss_zero: 你已经达成了零RSS的任务&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: 你已经成功退出
-    new:
-      fields:
-        password: 密码
-        submit: 登录
-      flash:
-        wrong_password: 你输入的密码错误，麻烦重新输入啦
-      rss: RSS
-      subtitle: 欢迎回来，我的朋友。
-      title: Stringer speaks
   starred:
     next: 下一页
     of: of
@@ -142,9 +154,9 @@ zh-CN:
     as_read: 已读
     click_to_read: （点击阅读）
     description: 我们正在努力的加载您订阅的内容，请稍等。
-    heroku_hourly_task: 
-    heroku_one_more_thing: 
-    heroku_scheduler: 
+    heroku_hourly_task:
+    heroku_one_more_thing:
+    heroku_scheduler:
     mark_all: 全部标为
     ready: 好了，我想你已经准备好了~
     refresh: 刷新

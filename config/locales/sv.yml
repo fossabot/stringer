@@ -6,7 +6,7 @@ sv:
     sorry: Tyvärr, du har inte läst några berättelser än!
   date:
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -19,6 +19,29 @@ sv:
     - okt
     - nov
     - dec
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Välkommen tillbaka, kompis.
+      title: Stringer pratar
+      fields:
+        email: Email
+        password: Lösenord
+        submit: Logga in
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Du har blivit utloggad!
+  validators:
+    password:
+      wrong: Det där är fel lösenord. Försök igen.
   feeds:
     add:
       description: Klistra in URL:en till bloggen du vill läsa.
@@ -68,6 +91,8 @@ sv:
     export: Exportera
     hey: Hallå!
     import: Importera
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Logga ut
     support: Hjälp
     title: stringer | din rss-polare
@@ -114,19 +139,6 @@ sv:
       go_make: gör nånting
       gtfo: Sluta läsa bloggar nu och
       rss_zero: Du har nått RSS Noll&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Du har blivit utloggad!
-    new:
-      fields:
-        password: Lösenord
-        submit: Logga in
-      flash:
-        wrong_password: Det där är fel lösenord. Försök igen.
-      rss: RSS
-      subtitle: Välkommen tillbaka, kompis.
-      title: Stringer pratar
   starred:
     next: Nästa
     of: av

@@ -3,13 +3,17 @@
 class Feed < ApplicationRecord
   enum status: [:green, :yellow, :red]
 
+  belongs_to :user
+
   belongs_to :group, optional: true
 
   has_many :stories, -> { order('published desc') }, dependent: :destroy
 
   has_many :unread_stories, -> { where(is_read: false).order('published desc') }, class_name: 'Story'
 
-  validates :url, uniqueness: true
+  validates :url, presence: true
+
+  validates :url, uniqueness: { scope: :user_id }
 
   def status_bubble
     return 'yellow' if red? && stories.any?

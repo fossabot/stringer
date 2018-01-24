@@ -6,7 +6,7 @@ nl:
     sorry: Sorry, je hebt nog geen artikelen gelezen!
   date:
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -19,6 +19,29 @@ nl:
     - okt
     - nov
     - dec
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Welkom terug, vriend.
+      title: Stringer spreekt
+      fields:
+        email: Email
+        password: Wachtwoord
+        submit: Inloggen
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Je bent uitgelogd!
+  validators:
+    password:
+      wrong: Dat is het verkeerde wachtwoord. Probeer het opnieuw.
   feeds:
     add:
       description: Plak de URL van de blog die je wilt lezen.
@@ -68,6 +91,8 @@ nl:
     export: Exporteren
     hey: Hé!
     import: Importeren
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Uitloggen
     support: Ondersteuning
     title: stringer | jouw rss-buddy
@@ -114,19 +139,6 @@ nl:
       go_make: ga iets maken
       gtfo: Stop met het lezen van blogs en
       rss_zero: Je hebt RSS Zero&trade; bereikt
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Je bent uitgelogd!
-    new:
-      fields:
-        password: Wachtwoord
-        submit: Inloggen
-      flash:
-        wrong_password: Dat is het verkeerde wachtwoord. Probeer het opnieuw.
-      rss: RSS
-      subtitle: Welkom terug, vriend.
-      title: Stringer spreekt
   starred:
     next: Volgende
     of: van

@@ -2,9 +2,10 @@
 
 class FeedController < ApplicationController
   def show
-    @feed = FeedRepository.fetch(params[:id])
+    @feed = current_user.feeds.find(params[:id])
 
-    @stories = StoryRepository.feed(params[:id])
-    @unread_stories = @stories.find_all { |story| !story.is_read }
+    @stories = @feed.stories.order(published: :desc).includes(:feed)
+
+    @unread_stories = @stories.where(is_read: false)
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_01_11_210123) do
+ActiveRecord::Schema.define(version: 2018_01_23_144557) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,8 @@ ActiveRecord::Schema.define(version: 2018_01_11_210123) do
     t.datetime "updated_at"
     t.integer "status"
     t.integer "group_id"
-    t.index ["url"], name: "index_feeds_on_url", unique: true
+    t.bigint "user_id"
+    t.index ["user_id", "url"], name: "index_feeds_on_user_id_and_url", unique: true
   end
 
   create_table "groups", id: :serial, force: :cascade do |t|
@@ -53,6 +54,9 @@ ActiveRecord::Schema.define(version: 2018_01_11_210123) do
     t.datetime "updated_at"
     t.boolean "setup_complete"
     t.string "api_key"
+    t.string "email"
+    t.index "lower((email)::text)", name: "index_users_on_LOWER_email", unique: true
   end
 
+  add_foreign_key "feeds", "users"
 end

@@ -5,5 +5,9 @@ require 'rails_helper'
 describe User do
   it { should be_an(ApplicationRecord) }
 
+  it { should have_many(:feeds).dependent(:destroy) }
+
+  it { should have_many(:stories).through(:feeds) }
+
   it { should have_secure_password }
 end

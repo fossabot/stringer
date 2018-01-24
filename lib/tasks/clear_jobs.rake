@@ -1,4 +1,5 @@
-desc 'Clear the delayed_job queue.'
+desc 'Clear the sidekiq queue.'
 task clear_jobs: :environment do
-  Delayed::Job.delete_all
+  # Delayed::Job.delete_all
 end
+

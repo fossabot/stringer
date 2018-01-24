@@ -18,8 +18,11 @@ But it does have keyboard shortcuts and was made with love!
 ### Enhanced edition
 
 * Updated to latest Ruby
-* Ported to Rails from Sinatra
-* Ported to sidekiq from delayed_job
+* Ported from Sinatra to Rails
+* Ported from delayed_job to sidekiq
+* Use rails assets pipeline
+* Use turbolinks
+* Multi users setup
 
 ## Environment
 
@@ -128,7 +131,7 @@ You can launch an interactive console using `rails console` (or `rails c` for sh
 
 ## Acknowledgements
 
-Most of the heavy-lifting is done by [`feedjira`](https://github.com/feedjira/feedjira) and [`feedbag`](https://github.com/dwillis/feedbag).
+Most of the heavy-lifting is done by [`feedjira`](https://github.com/feedjira/feedjira) and [`feedbag`](https://github.com/damog/feedbag).
 
 General sexiness courtesy of [`Twitter Bootstrap`](http://twitter.github.io/bootstrap/) and [`Flat UI`](http://designmodo.github.io/Flat-UI/).
 

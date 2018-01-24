@@ -6,7 +6,7 @@ pt-BR:
     sorry: Desculpe, você não leu alguma história ainda!
   date:
     abbr_month_names:
-    - 
+    -
     - Jan
     - Fev
     - Mar
@@ -19,6 +19,29 @@ pt-BR:
     - Out
     - Nov
     - Dez
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Bem vindo novamente, amigo.
+      title: Stringer fala
+      fields:
+        email: Email
+        password: Senha
+        submit: Entrar
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Você saiu!
+  validators:
+    password:
+      wrong: Esta senha está incorreta. Tente novamente.
   feeds:
     add:
       description: Cole a URL do blog que você quer ler.
@@ -32,11 +55,11 @@ pt-BR:
       title: Precisa de novas histórias?
     edit:
       fields:
-        feed_name: 
-        feed_url: 
-        submit: 
+        feed_name:
+        feed_url:
+        submit:
       flash:
-        updated_successfully: 
+        updated_successfully:
     index:
       add: adicionar
       add_some_feeds: Ei, você deveria %{add} alguns feeds.
@@ -68,6 +91,8 @@ pt-BR:
     export: Exportar
     hey: Hey!
     import: Importar
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Sair
     support: Suporte
     title: stringer | seu companheiro de rss
@@ -97,7 +122,7 @@ pt-BR:
       keys:
         a: Adicione um feed
         bv: Ir para a URL da história
-        f: 
+        f:
         jk: História próxima/anterior
         left: Página anterior
         m: Marcar item como lido/não lido
@@ -114,19 +139,6 @@ pt-BR:
       go_make: vá fazer alguma coisa
       gtfo: Agora pare de ler blogs e
       rss_zero: Você alcançou RSS Zero&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Você saiu!
-    new:
-      fields:
-        password: Senha
-        submit: Entrar
-      flash:
-        wrong_password: Esta senha está incorreta. Tente novamente.
-      rss: RSS
-      subtitle: Bem vindo novamente, amigo.
-      title: Stringer fala
   starred:
     next: Próximo
     of: de
@@ -142,9 +154,9 @@ pt-BR:
     as_read: como lido
     click_to_read: (clique para ler)
     description: Nós estamos pegando algumas histórias para leitura, dê-nos um segundo.
-    heroku_hourly_task: 
-    heroku_one_more_thing: 
-    heroku_scheduler: 
+    heroku_hourly_task:
+    heroku_one_more_thing:
+    heroku_scheduler:
     mark_all: marcar todos
     ready: Ok, está pronto!
     refresh: atualizar

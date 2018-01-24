@@ -6,7 +6,7 @@ ja:
     sorry: ごめんなさい、なにもストーリーを読み込んでません
   date:
     abbr_month_names:
-    - 
+    -
     - 1月
     - 2月
     - 3月
@@ -19,6 +19,29 @@ ja:
     - 10月
     - 11月
     - 12月
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: おかえり
+      title: Stringer speaks
+      fields:
+        email: Email
+        password: パスワード
+        submit: ログイン
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: サインアウトしました！
+  validators:
+    password:
+      wrong: パスワードが違います。もう一度試して下さい
   feeds:
     add:
       description: 購読したいブログのURLをペーストして下さい
@@ -68,6 +91,8 @@ ja:
     export: 書き出し
     hey: やぁ！
     import: 読み込み
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: ログアウト
     support: サポート
     title: stringer | your rss buddy
@@ -114,19 +139,6 @@ ja:
       go_make: 何か作ろう
       gtfo: ブログを読むのをやめて
       rss_zero: RSS Zero&trade; に達しました
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: サインアウトしました！
-    new:
-      fields:
-        password: パスワード
-        submit: ログイン
-      flash:
-        wrong_password: パスワードが違います。もう一度試して下さい
-      rss: RSS
-      subtitle: おかえり
-      title: Stringer speaks
   starred:
     next: 次
     of: の

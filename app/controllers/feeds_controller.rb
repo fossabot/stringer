@@ -2,7 +2,7 @@
 
 class FeedsController < ApplicationController
   def index
-    @feeds = FeedRepository.list
+    @feeds = current_user.feeds.order("lower(name)")
   end
 
   def new
@@ -11,7 +11,7 @@ class FeedsController < ApplicationController
 
   def create
     @feed_url = params[:feed_url]
-    feed = AddNewFeed.add(@feed_url)
+    feed = AddNewFeed.add(current_user, @feed_url)
 
     if feed && feed.valid?
       FetchFeedJob.perform_later(feed)
@@ -20,22 +20,22 @@ class FeedsController < ApplicationController
 
       redirect_to root_path
     elsif feed
-      flash.now[:error] = t('feeds.add.flash.already_subscribed_error')
+      flash[:error] = t('feeds.add.flash.already_subscribed_error')
 
       render :new
     else
-      flash.now[:error] = t('feeds.add.flash.feed_not_found_error')
+      flash[:error] = t('feeds.add.flash.feed_not_found_error')
 
       render :new
     end
   end
 
   def edit
-    @feed = FeedRepository.fetch(params[:id])
+    @feed = current_user.feeds.find(params[:id])
   end
 
   def update
-    feed = FeedRepository.fetch(params[:id])
+    feed = current_user.feeds.find(params[:id])
 
     FeedRepository.update_feed(feed, params[:feed_name], params[:feed_url], params[:group_id])
 

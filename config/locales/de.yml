@@ -6,7 +6,7 @@ de:
     sorry: Entschuldigung, du hast noch keine Geschichten gelesen.
   date:
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -19,6 +19,29 @@ de:
     - Okt
     - Nov
     - Dez
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Wilkommen zurück, Freund.
+      title: Stringer sagt
+      fields:
+        email: Email
+        password: Passwort
+        submit: Login
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Du wurdest ausgeloggt!
+  validators:
+    password:
+      wrong: Das ist das falsche Passwort. Probiere es noch einmal.
   feeds:
     add:
       description: Füge die URL des Blogs, den du lesen willst, ein.
@@ -68,6 +91,8 @@ de:
     export: Exportieren
     hey: Hey!
     import: Importieren
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Ausloggen
     support: Support
     title: stringer | dein rss Kumpel
@@ -114,19 +139,6 @@ de:
       go_make: geh und mach etwas
       gtfo: Jetzt hör auf Blogs zu lesen und
       rss_zero: Du hast RSS Zero&trade; erreicht
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Du wurdest ausgeloggt!
-    new:
-      fields:
-        password: Passwort
-        submit: Login
-      flash:
-        wrong_password: Das ist das falsche Passwort. Probiere es noch einmal.
-      rss: RSS
-      subtitle: Wilkommen zurück, Freund.
-      title: Stringer sagt
   starred:
     next: Nächste
     of: von

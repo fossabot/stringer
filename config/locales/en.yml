@@ -6,7 +6,7 @@ en:
     sorry: Sorry, you haven't read any stories yet!
   date:
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -19,6 +19,29 @@ en:
     - Oct
     - Nov
     - Dec
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Welcome back, friend.
+      title: Stringer speaks
+      fields:
+        email: Email
+        password: Password
+        submit: Login
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: You have been signed out!
+  validators:
+    password:
+      wrong: That's the wrong password. Try again.
   feeds:
     add:
       description: Paste in the URL of the blog you want to read.
@@ -69,6 +92,8 @@ en:
     export: Export
     hey: Hey!
     import: Import
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Logout
     support: Support
     title: stringer | your rss buddy
@@ -115,19 +140,6 @@ en:
       go_make: go make something
       gtfo: Now stop reading blogs and
       rss_zero: You've reached RSS Zero&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: You have been signed out!
-    new:
-      fields:
-        password: Password
-        submit: Login
-      flash:
-        wrong_password: That's the wrong password. Try again.
-      rss: RSS
-      subtitle: Welcome back, friend.
-      title: Stringer speaks
   starred:
     next: Next
     of: of

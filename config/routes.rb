@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resource :sign_up, only: [:new, :create]
+
+  resource :sign_in, only: [:new, :create]
+
+  resource :sign_out, only: :destroy
+
   namespace :setup do
     resource :password, only: [:show, :create]
 
@@ -28,8 +34,6 @@ Rails.application.routes.draw do
   end
 
   resources :feed, only: :show
-
-  resource :session, only: [:new, :create, :destroy]
 
   resource :heroku, only: :show
 

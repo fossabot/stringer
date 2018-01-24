@@ -6,7 +6,7 @@ fr:
     sorry: Désolé, vous n'avez encore rien lu !
   date:
     abbr_month_names:
-    - 
+    -
     - jan.
     - fév.
     - mar.
@@ -19,6 +19,29 @@ fr:
     - oct.
     - nov.
     - déc.
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Content de vous revoir, l'ami.
+      title: Stringer parle le
+      fields:
+        email: Email
+        password: Mot de passe
+        submit: Identifiant
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Vous avez été déconnecté !
+  validators:
+    password:
+      wrong: Ce n'est pas le bon mot de passe. Essayez encore.
   feeds:
     add:
       description: Collez ici l'URL du blog que vous souhaitez lire.
@@ -32,11 +55,11 @@ fr:
       title: Besoin de nouveaux articles ?
     edit:
       fields:
-        feed_name: 
-        feed_url: 
-        submit: 
+        feed_name:
+        feed_url:
+        submit:
       flash:
-        updated_successfully: 
+        updated_successfully:
     index:
       add: ajouter
       add_some_feeds: Vous devriez %{add} quelques flux.
@@ -68,6 +91,8 @@ fr:
     export: Export
     hey: Hé !
     import: Import
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Déconnection
     support: Aide
     title: stringer | votre compagnon rss
@@ -97,7 +122,7 @@ fr:
       keys:
         a: Ajouter un flux
         bv: Aller à l'URL de l'article
-        f: 
+        f:
         jk: Article suivant/précédent
         left: Page précédente
         m: Marquer ceci comme lu/non lu
@@ -114,19 +139,6 @@ fr:
       go_make: allez faire quelque chose
       gtfo: Maintenant cessez de lire et
       rss_zero: Vous avez atteint RSS Zéro&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Vous avez été déconnecté !
-    new:
-      fields:
-        password: Mot de passe
-        submit: Identifiant
-      flash:
-        wrong_password: Ce n'est pas le bon mot de passe. Essayez encore.
-      rss: RSS
-      subtitle: Content de vous revoir, l'ami.
-      title: Stringer parle le
   starred:
     next: Suivant
     of: de
@@ -142,9 +154,9 @@ fr:
     as_read: comme lu
     click_to_read: (cliquer pour lire)
     description: Nous récupérons quelques articles à lire, donnez-nous une seconde.
-    heroku_hourly_task: 
-    heroku_one_more_thing: 
-    heroku_scheduler: 
+    heroku_hourly_task:
+    heroku_one_more_thing:
+    heroku_scheduler:
     mark_all: tout marquer
     ready: Ok, c'est prêt !
     refresh: rafraîchir

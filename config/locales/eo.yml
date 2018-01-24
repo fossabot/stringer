@@ -6,7 +6,7 @@ eo:
     sorry: Bedaŭrinde, vi ankoraŭ ne legis ajnajn rakontojn.
   date:
     abbr_month_names:
-    - 
+    -
     - jan
     - feb
     - mar
@@ -19,6 +19,29 @@ eo:
     - okt
     - nov
     - dec
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Bonrevenon, amiko.
+      title: Stringer parolas
+      fields:
+        email: Email
+        password: Pasvorto
+        submit: Ensaluti
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Vi elsalutis.
+  validators:
+    password:
+      wrong: Malĝusta pasvorto. Reprovu.
   feeds:
     add:
       description: Algluu la URL de la blogo kiu vi volas legi.
@@ -68,6 +91,8 @@ eo:
     export: Eksporti
     hey: He!
     import: Importi
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Elsaluti
     support: Subteno
     title: stringer | via RSS amiko
@@ -114,19 +139,6 @@ eo:
       go_make: Iru fari ion!
       gtfo: Ĉesu legadon de blogoj kaj
       rss_zero: Vi atingis RSS-nul&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Vi elsalutis.
-    new:
-      fields:
-        password: Pasvorto
-        submit: Ensaluti
-      flash:
-        wrong_password: Malĝusta pasvorto. Reprovu.
-      rss: RSS
-      subtitle: Bonrevenon, amiko.
-      title: Stringer parolas
   starred:
     next: Sekva
     of: de

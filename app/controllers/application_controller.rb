@@ -3,8 +3,6 @@
 class ApplicationController < ActionController::Base
   include HttpAcceptLanguage::AutoLocale
 
-  skip_before_action :verify_authenticity_token # TODO: enable later
-
   before_action :authenticate
 
   helper_method :current_user
@@ -16,6 +14,6 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate
-    redirect_to new_session_path if !current_user
+    redirect_to new_sign_in_path if !current_user
   end
 end

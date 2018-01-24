@@ -7,13 +7,17 @@ describe Feed do
 
   it { should define_enum_for(:status).with([:green, :yellow, :red]) }
 
+  it { should belong_to(:user) }
+
   it { should belong_to(:group) } # TODO: add .optional after shoulda-matchers update
 
   it { should have_many(:stories).order('published desc').dependent(:destroy) }
 
   it { should have_many(:unread_stories).conditions(is_read: false).order('published desc').class_name('Story') }
 
-  it { should validate_uniqueness_of(:url) }
+  it { should validate_presence_of(:url) }
+
+  it { should validate_uniqueness_of(:url).scoped_to(:user_id) }
 
   describe '#status_bubble' do
     context 'when status red and any story exist' do

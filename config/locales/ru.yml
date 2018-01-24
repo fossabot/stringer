@@ -6,7 +6,7 @@ ru:
     sorry: К сожалению, вы пока не прочитали ни одной истории!
   date:
     abbr_month_names:
-    - 
+    -
     - янв.
     - февр.
     - марта
@@ -19,6 +19,29 @@ ru:
     - окт.
     - нояб.
     - дек.
+  signup:
+    new:
+      fields:
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        submit: Sign Up
+  signin:
+    new:
+      rss: RSS
+      subtitle: Добро пожаловать, друг.
+      title: Stringer использует
+      fields:
+        email: Email
+        password: Пароль
+        submit: Войти
+  signout:
+    destroy:
+      flash:
+        logged_out_successfully: Вы вышли из системы!
+  validators:
+    password:
+      wrong: Это неправильный пароль. Попробуйте еще раз.
   feeds:
     add:
       description: Вставьте URL блога который Вы хотите читать.
@@ -32,11 +55,11 @@ ru:
       title: Нужны новые истории?
     edit:
       fields:
-        feed_name: 
-        feed_url: 
-        submit: 
+        feed_name:
+        feed_url:
+        submit:
       flash:
-        updated_successfully: 
+        updated_successfully:
     index:
       add: добавить
       add_some_feeds: Эй, ​​Вы должны %{add} некоторые фид каналы.
@@ -67,7 +90,9 @@ ru:
     back_to_work: Возвращайтесь к работе, бездельник!
     export: Экспортировать
     hey: Привет!
-    import: 
+    import:
+    sign_in: Sign In
+    sign_up: Sign Up
     logout: Выйти
     support: Помощь
     title: stringer | your rss buddy
@@ -95,9 +120,9 @@ ru:
       starred_stories: Избранные истории
     shortcuts:
       keys:
-        a: 
+        a:
         bv: Перейти к ссылке
-        f: 
+        f:
         jk: Перейти на следующую/предыдущую историю
         left: Предыдущая страница
         m: Пометить как прочитанное/непрочитанное
@@ -114,19 +139,6 @@ ru:
       go_make: сделайте что-то полезное
       gtfo: Теперь прекратите читать блоги и
       rss_zero: Вы достигли RSS Zero&trade;
-  sessions:
-    destroy:
-      flash:
-        logged_out_successfully: Вы вышли из системы!
-    new:
-      fields:
-        password: Пароль
-        submit: Войти
-      flash:
-        wrong_password: Это неправильный пароль. Попробуйте еще раз.
-      rss: RSS
-      subtitle: Добро пожаловать, друг.
-      title: Stringer использует
   starred:
     next: Следующий
     of: из
@@ -142,9 +154,9 @@ ru:
     as_read: как прочитанное
     click_to_read: (нажмите, чтобы прочитать)
     description: Мы получаем ваши истории для чтения, секунду.
-    heroku_hourly_task: 
-    heroku_one_more_thing: 
-    heroku_scheduler: 
+    heroku_hourly_task:
+    heroku_one_more_thing:
+    heroku_scheduler:
     mark_all: пометить все
     ready: Все готово!
     refresh: обновить
