@@ -34,6 +34,9 @@ gem 'http_accept_language'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'email_address'
+gem 'feedbag'
+gem 'feedjira', '~> 2.1.0'
+# gem 'feedjira', '~> 3.0.0.beta1'
 # gem 'pundit'
 gem 'whenever', require: false
 gem 'sidekiq', require: false
@@ -78,9 +81,6 @@ group :development, :test do
   gem "rspec-html-matchers", "~> 0.7"
   gem "timecop", "~> 0.8"
 end
-
-gem "feedbag", "~> 0.9.5"
-gem "feedjira", "~> 2.1.0"
 
 group :test do
   gem 'database_rewinder'
