@@ -2,7 +2,7 @@
 
 class FeedsController < ApplicationController
   def index
-    @feeds = FeedRepository.list
+    @feeds = current_user.feeds.order("lower(name)")
   end
 
   def new

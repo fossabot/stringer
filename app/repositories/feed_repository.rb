@@ -30,10 +30,6 @@ class FeedRepository
     feed.save
   end
 
-  def self.list
-    Feed.order("lower(name)")
-  end
-
   def self.in_group
     Feed.where("group_id IS NOT NULL")
   end
