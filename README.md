@@ -22,6 +22,7 @@ But it does have keyboard shortcuts and was made with love!
 * Ported from delayed_job to sidekiq
 * Use rails assets pipeline
 * Use turbolinks
+* Multi users setup
 
 ## Environment
 
