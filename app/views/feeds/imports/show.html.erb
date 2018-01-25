@@ -8,10 +8,10 @@
   </p>
   <hr />
 
-  <form id="import" method="POST" action="/feeds/import" enctype="multipart/form-data">
-    <input id="opml_file" name="opml_file" type="file" title="<%= t('import.fields.import') %>" class="btn-primary" />
-    <a href="/setup/tutorial" id="skip" class="btn pull-right"><%= t('import.fields.not_now') %></a>
-  </form>
+  <%= form_with(url: feeds_import_path, id: 'import', local: true) do |form| %>
+    <%= form.file_field(:opml_file, id: 'opml_file', class: 'btn-primary', title: t('import.fields.import'), required: true) %>
+    <%= link_to t('import.fields.not_now'), setup_tutorial_path, id: 'skip', class: 'btn pull-right' %>
+  <% end %>
 </div>
 
 <script type="text/javascript">
