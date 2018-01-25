@@ -19,6 +19,8 @@ describe UserSignUp, type: :model do
 
   it { should validate_confirmation_of(:password) }
 
+  pending { should validate_password_strength(:password) }
+
   describe '#save' do
     context 'when form valid' do
       let(:user) { instance_double(User, save: true) }
