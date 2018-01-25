@@ -13,6 +13,8 @@ class UserSignUp
 
   validates :password, confirmation: true
 
+  validates :password, password_strength: true
+
   def initialize(params)
     @email = params[:email]
     @password = params[:password]
