@@ -7,7 +7,7 @@ class StoriesController < ApplicationController
     story = StoryRepository.fetch(params[:id])
     story.is_read = !!json_params[:is_read]
     story.keep_unread = !!json_params[:keep_unread]
-    story.is_starred = !!json_params[:is_starred]
+    story.starred = !!json_params[:starred]
 
     StoryRepository.save(story)
 

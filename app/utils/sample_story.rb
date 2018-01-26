@@ -48,7 +48,7 @@ booth vice literally.</p>
     false
   end
 
-  def is_starred # rubocop:disable Style/PredicateName
+  def starred # rubocop:disable Style/PredicateName
     false
   end
 
@@ -67,7 +67,7 @@ booth vice literally.</p>
       body: body,
       permalink: permalink,
       is_read: is_read,
-      is_starred: is_starred,
+      is_starred: starred,
       keep_unread: keep_unread
     }
   end

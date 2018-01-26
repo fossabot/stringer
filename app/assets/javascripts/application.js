@@ -80,10 +80,10 @@ var Story = Backbone.Model.extend({
     },
 
     toggleStarred: function() {
-        if (this.get("is_starred")) {
-            this.set("is_starred", false);
+        if (this.get("starred")) {
+            this.set("starred", false);
         } else {
-            this.set("is_starred", true);
+            this.set("starred", true);
         }
 
         if (this.shouldSave()) this.save();
@@ -126,7 +126,7 @@ var StoryView = Backbone.View.extend({
         this.listenTo(this.model, 'change:open', this.itemOpened);
         this.listenTo(this.model, 'change:is_read', this.itemRead);
         this.listenTo(this.model, 'change:keep_unread', this.itemKeepUnread);
-        this.listenTo(this.model, 'change:is_starred', this.itemStarred);
+        this.listenTo(this.model, 'change:starred', this.itemStarred);
     },
 
     render: function() {
@@ -168,7 +168,7 @@ var StoryView = Backbone.View.extend({
     },
 
     itemStarred: function() {
-        var icon = this.model.get("is_starred") ? "icon-star" : "icon-star-empty";
+        var icon = this.model.get("starred") ? "icon-star" : "icon-star-empty";
         this.$(".story-starred > i").attr("class", icon);
     },
 

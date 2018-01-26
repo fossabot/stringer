@@ -2,7 +2,7 @@
   <div class="row-fluid story-preview">
     <div class="span3">
       <div class="story-starred">
-        <i class="icon-star{{ if(!is_starred) { }}-empty{{ } }}"></i>
+        <i class="icon-star{{ if(!starred) { }}-empty{{ } }}"></i>
       </div>
       <p class="blog-title">
         {{= source }}
@@ -36,7 +36,7 @@
           <i class="icon-check{{ if(!keep_unread) { }}-empty{{ } }}"></i> <%= t('stories.keep_unread') %>
         </div>
         <div class="story-starred">
-          <i class="icon-star{{ if(!is_starred) { }}-empty{{ } }}"></i>
+          <i class="icon-star{{ if(!starred) { }}-empty{{ } }}"></i>
         </div>
         <a class="story-permalink" target="_blank" href="{{= permalink }}">
           <i class="icon-external-link"></i>

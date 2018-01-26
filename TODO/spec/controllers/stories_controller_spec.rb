@@ -72,8 +72,8 @@ describe "StoriesController" do
   end
 
   describe "GET /starred" do
-    let(:starred_one) { StoryFactory.build(is_starred: true) }
-    let(:starred_two) { StoryFactory.build(is_starred: true) }
+    let(:starred_one) { StoryFactory.build(starred: true) }
+    let(:starred_two) { StoryFactory.build(starred: true) }
     let(:stories) { [starred_one, starred_two].paginate }
     before { allow(StoryRepository).to receive(:starred).and_return(stories) }
 
@@ -128,20 +128,20 @@ describe "StoriesController" do
       end
     end
 
-    context "is_starred parameter" do
+    context "starred parameter" do
       context "when it is not malformed" do
         it "marks a story as permanently starred" do
-          put "/stories/#{story_one.id}", { is_starred: true }.to_json
+          put "/stories/#{story_one.id}", { starred: true }.to_json
 
-          expect(story_one.is_starred).to eq true
+          expect(story_one.starred).to eq true
         end
       end
 
       context "when it is malformed" do
         it "marks a story as permanently starred" do
-          put "/stories/#{story_one.id}", { is_starred: "malformed" }.to_json
+          put "/stories/#{story_one.id}", { starred: "malformed" }.to_json
 
-          expect(story_one.is_starred).to eq true
+          expect(story_one.starred).to eq true
         end
       end
     end

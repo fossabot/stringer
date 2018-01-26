@@ -17,7 +17,7 @@ describe("Storyiew", function(){
         permalink: "http://example.com/krunch",
         keep_unread: false,
         is_read: false,
-        is_starred: false
+        starred: false
       });
 
       this.view = new StoryView({model: this.story})
@@ -98,7 +98,7 @@ describe("Storyiew", function(){
     it("should autofill star button based on item", function(){
       assertTagExists(this.view.$el, ".story-starred .icon-star-empty", 2);
 
-      this.story.set("is_starred", true);
+      this.story.set("starred", true);
       this.view.render();
 
       assertTagExists(this.view.$el, ".story-starred .icon-star", 2);

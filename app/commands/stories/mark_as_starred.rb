@@ -7,6 +7,6 @@ class MarkAsStarred
   end
 
   def mark_as_starred
-    @repo.fetch(@story_id).update_attributes(is_starred: true)
+    @repo.fetch(@story_id).update_attributes(starred: true)
   end
 end

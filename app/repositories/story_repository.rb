@@ -9,7 +9,7 @@ class StoryRepository
                  permalink: extract_url(entry, feed),
                  body: extract_content(entry),
                  is_read: false,
-                 is_starred: false,
+                 starred: false, # TODO: check and remove
                  published: entry.published || Time.now,
                  entry_id: entry.id)
   end
@@ -53,11 +53,11 @@ class StoryRepository
   end
 
   def self.all_starred
-    Story.where(is_starred: true)
+    Story.where(starred: true)
   end
 
   def self.unstarred_read_stories_older_than(num_days)
-    Story.where(is_read: true, is_starred: false)
+    Story.where(is_read: true, starred: false)
          .where("published <= ?", num_days.days.ago)
   end
 
