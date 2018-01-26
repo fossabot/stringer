@@ -23,6 +23,7 @@ But it does have keyboard shortcuts and was made with love!
 * Use rails assets pipeline
 * Use turbolinks
 * Multi-user setup
+* Locale auto set to supported
 
 ### Planing
 
@@ -93,9 +94,7 @@ If you have previously setup Stringer, you will need to migrate your database an
 
 ### Translations
 
-Stringer has been translated to [several other languages](config/locales). Your language can be set with the `LOCALE` environment variable.
-
-To set your locale on Heroku, run `heroku config:set LOCALE=en`.
+Stringer has been translated to [several other languages](config/locales).
 
 If you would like to translate Stringer to your preferred language, please use [LocaleApp](http://www.localeapp.com/projects/4637).
 
