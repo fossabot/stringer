@@ -89,4 +89,5 @@ group :test do
   gem 'rails-controller-testing'
   gem 'rspec-its'
   gem 'simplecov', require: false
+  gem 'rack_session_access'
 end
