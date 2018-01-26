@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_01_26_124023) do
+ActiveRecord::Schema.define(version: 2018_01_26_130319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2018_01_26_124023) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "published"
-    t.boolean "is_read"
+    t.boolean "readed"
     t.boolean "keep_unread", default: false
     t.boolean "starred", default: false
     t.text "entry_id"
