@@ -9,5 +9,7 @@ describe User do
 
   it { should have_many(:stories).through(:feeds) }
 
+  it { should have_many(:starred_stories).conditions(starred: true).through(:feeds).source(:stories).class_name('Story') }
+
   it { should have_secure_password }
 end
