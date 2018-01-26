@@ -57,8 +57,8 @@ describe "StoriesController" do
   end
 
   describe "GET /archive" do
-    let(:read_one) { StoryFactory.build(is_read: true) }
-    let(:read_two) { StoryFactory.build(is_read: true) }
+    let(:read_one) { StoryFactory.build(readed: true) }
+    let(:read_two) { StoryFactory.build(readed: true) }
     let(:stories) { [read_one, read_two].paginate }
     before { allow(StoryRepository).to receive(:read).and_return(stories) }
 
@@ -88,14 +88,14 @@ describe "StoriesController" do
 
   describe "PUT /stories/:id" do
     before { allow(StoryRepository).to receive(:fetch).and_return(story_one) }
-    context "is_read parameter" do
+    context "readed parameter" do
       context "when it is not malformed" do
         it "marks a story as read" do
           expect(StoryRepository).to receive(:save).once
 
-          put "/stories/#{story_one.id}", { is_read: true }.to_json
+          put "/stories/#{story_one.id}", { readed: true }.to_json
 
-          expect(story_one.is_read).to eq true
+          expect(story_one.readed).to eq true
         end
       end
 
@@ -103,9 +103,9 @@ describe "StoriesController" do
         it "marks a story as read" do
           expect(StoryRepository).to receive(:save).once
 
-          put "/stories/#{story_one.id}", { is_read: "malformed" }.to_json
+          put "/stories/#{story_one.id}", { readed: "malformed" }.to_json
 
-          expect(story_one.is_read).to eq true
+          expect(story_one.readed).to eq true
         end
       end
     end
@@ -179,8 +179,8 @@ describe "StoriesController" do
       allow(FeedRepository).to receive(:fetch).and_return(story_one.feed)
       allow(StoryRepository).to receive(:feed).and_return(stories)
 
-      story_one.is_read = false
-      story_two.is_read = true
+      story_one.readed = false
+      story_two.readed = true
 
       get "/feed/#{story_one.feed.id}"
 

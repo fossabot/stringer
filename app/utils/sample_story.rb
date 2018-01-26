@@ -1,4 +1,4 @@
-SampleStory = Struct.new(:source, :title, :lead, :is_read, :published) do
+SampleStory = Struct.new(:source, :title, :lead, :readed, :published) do
   BODY = <<-EOS.freeze
 <p>Tofu shoreditch intelligentsia <a href="#">umami</a>, fashion axe photo booth
 try-hard terry richardson quinoa actually fingerstache meggings fixie. Aesthetic
@@ -40,7 +40,7 @@ booth vice literally.</p>
     BODY
   end
 
-  def is_read # rubocop:disable Style/PredicateName
+  def readed # rubocop:disable Style/PredicateName
     false
   end
 
@@ -66,7 +66,7 @@ booth vice literally.</p>
       pretty_date: published.strftime("%A, %B %d"),
       body: body,
       permalink: permalink,
-      is_read: is_read,
+      is_read: readed,
       is_starred: starred,
       keep_unread: keep_unread
     }

@@ -19,18 +19,18 @@ describe("Story", function(){
       story.get("selected").should.be.true;
     });
 
-    it("sets is_read to true if keep_unread isn't true", function(){
+    it("sets readed to true if keep_unread isn't true", function(){
       var story = new Story();
       (!! story.get("keep_unread")).should.be.false;
       story.open();
-      story.get("is_read").should.be.true;
+      story.get("readed").should.be.true;
     });
 
-    it("doesn't sets is_read to true if keep_unread is true", function(){
+    it("doesn't sets readed to true if keep_unread is true", function(){
       var story = new Story();
       story.set("keep_unread", true);
       story.open();
-      (!! story.get("is_read")).should.be.false;
+      (!! story.get("readed")).should.be.false;
     });
 
     it("calls closeOthers, unselectAll, setSelection on collection", function(){
@@ -117,7 +117,7 @@ describe("Story", function(){
     it("returns false if it has changedAttributes but no id", function(){
       var story = new Story();
       sinon.stub(story, "changedAttributes", function(){
-        return {is_read: true};
+        return {readed: true};
       });
       story.shouldSave().should.be.false;
       story.changedAttributes.should.have.been.calledOnce;
@@ -126,7 +126,7 @@ describe("Story", function(){
     it("returns true if it has changedAttributes and an id", function(){
       var story = new Story({id: 1});
       sinon.stub(story, "changedAttributes", function(){
-        return {is_read: true};
+        return {readed: true};
       });
       story.shouldSave().should.be.true;
       story.changedAttributes.should.have.been.calledOnce;

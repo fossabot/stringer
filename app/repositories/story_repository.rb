@@ -8,7 +8,7 @@ class StoryRepository
                  title: extract_title(entry),
                  permalink: extract_url(entry, feed),
                  body: extract_content(entry),
-                 is_read: false,
+                 readed: false, # TODO: check and remove
                  starred: false, # TODO: check and remove
                  published: entry.published || Time.now,
                  entry_id: entry.id)
@@ -24,7 +24,7 @@ class StoryRepository
 
   def self.fetch_unread_by_timestamp(timestamp)
     timestamp = Time.at(timestamp.to_i)
-    Story.where("stories.created_at < ?", timestamp).where(is_read: false)
+    Story.where("stories.created_at < ?", timestamp).where(readed: false)
   end
 
   def self.fetch_unread_by_timestamp_and_group(timestamp, group_id)
@@ -33,7 +33,7 @@ class StoryRepository
 
   def self.fetch_unread_for_feed_by_timestamp(feed_id, timestamp)
     timestamp = Time.at(timestamp.to_i)
-    Story.where(feed_id: feed_id).where("created_at < ? AND is_read = ?", timestamp, false)
+    Story.where(feed_id: feed_id).where("created_at < ? AND readed = ?", timestamp, false)
   end
 
   def self.save(story)
@@ -57,12 +57,12 @@ class StoryRepository
   end
 
   def self.unstarred_read_stories_older_than(num_days)
-    Story.where(is_read: true, starred: false)
+    Story.where(readed: true, starred: false)
          .where("published <= ?", num_days.days.ago)
   end
 
   def self.read_count
-    Story.where(is_read: true).count
+    Story.where(readed: true).count
   end
 
   def self.extract_url(entry, feed)

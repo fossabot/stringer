@@ -16,7 +16,7 @@ describe("Storyiew", function(){
         pretty_date: "Mon July 1, 2013",
         permalink: "http://example.com/krunch",
         keep_unread: false,
-        is_read: false,
+        readed: false,
         starred: false
       });
 

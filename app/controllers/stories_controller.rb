@@ -5,7 +5,7 @@ class StoriesController < ApplicationController
     json_params = JSON.parse(request.body.read, symbolize_names: true)
 
     story = StoryRepository.fetch(params[:id])
-    story.is_read = !!json_params[:is_read]
+    story.readed = !!json_params[:readed]
     story.keep_unread = !!json_params[:keep_unread]
     story.starred = !!json_params[:starred]
 

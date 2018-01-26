@@ -13,7 +13,7 @@ describe Feed do
 
   it { should have_many(:stories).order('published desc').dependent(:destroy) }
 
-  it { should have_many(:unread_stories).conditions(is_read: false).order('published desc').class_name('Story') }
+  it { should have_many(:unread_stories).conditions(readed: false).order('published desc').class_name('Story') }
 
   it { should validate_presence_of(:url) }
 

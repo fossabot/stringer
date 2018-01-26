@@ -37,7 +37,7 @@ class Story < ApplicationRecord
       html: body,
       url: permalink,
       is_saved: starred ? 1 : 0,
-      is_read: is_read ? 1 : 0,
+      is_read: readed ? 1 : 0,
       created_on_time: published.to_i
     }
   end

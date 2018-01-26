@@ -102,7 +102,7 @@ describe Story do
              body: 'Welcome!',
              permalink: 'https://example.com/blog/1',
              starred: false,
-             is_read: true,
+             readed: true,
              published: Time.zone.local(2018, 1, 12, 18, 23, 0))
     end
 

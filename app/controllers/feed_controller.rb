@@ -6,6 +6,6 @@ class FeedController < ApplicationController
 
     @stories = @feed.stories.order(published: :desc).includes(:feed)
 
-    @unread_stories = @stories.where(is_read: false)
+    @unread_stories = @stories.where(readed: false)
   end
 end
