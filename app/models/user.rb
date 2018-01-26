@@ -5,10 +5,13 @@ class User < ApplicationRecord
 
   has_many :stories, through: :feeds
 
+  has_many :unread_stories, -> { where(readed: false) },
+           through: :feeds,
+           source: :stories
+
   has_many :starred_stories, -> { where(starred: true) },
            through: :feeds,
-           source: :stories,
-           class_name: 'Story'
+           source: :stories
 
   has_secure_password
 end
