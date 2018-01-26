@@ -5,7 +5,7 @@ class User < ApplicationRecord
 
   has_many :stories, through: :feeds
 
-  has_many :unread_stories, -> { where(readed: false) },
+  has_many :unreaded_stories, -> { where(readed: false) },
            through: :feeds,
            source: :stories
 
