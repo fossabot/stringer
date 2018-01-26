@@ -54,7 +54,7 @@ var Story = Backbone.Model.extend({
     },
 
     open: function() {
-        if (!this.get("keep_unread")) this.set("is_read", true);
+        if (!this.get("keep_unread")) this.set("readed", true);
         if (this.shouldSave()) this.save();
 
         if(this.collection){
@@ -70,20 +70,20 @@ var Story = Backbone.Model.extend({
     toggleKeepUnread: function() {
         if (this.get("keep_unread")) {
             this.set("keep_unread", false);
-            this.set("is_read", true);
+            this.set("readed", true);
         } else {
             this.set("keep_unread", true);
-            this.set("is_read", false);
+            this.set("readed", false);
         }
 
         if (this.shouldSave()) this.save();
     },
 
     toggleStarred: function() {
-        if (this.get("is_starred")) {
-            this.set("is_starred", false);
+        if (this.get("starred")) {
+            this.set("starred", false);
         } else {
-            this.set("is_starred", true);
+            this.set("starred", true);
         }
 
         if (this.shouldSave()) this.save();
@@ -124,15 +124,15 @@ var StoryView = Backbone.View.extend({
         this.listenTo(this.model, 'add', this.render);
         this.listenTo(this.model, 'change:selected', this.itemSelected);
         this.listenTo(this.model, 'change:open', this.itemOpened);
-        this.listenTo(this.model, 'change:is_read', this.itemRead);
+        this.listenTo(this.model, 'change:readed', this.itemRead);
         this.listenTo(this.model, 'change:keep_unread', this.itemKeepUnread);
-        this.listenTo(this.model, 'change:is_starred', this.itemStarred);
+        this.listenTo(this.model, 'change:starred', this.itemStarred);
     },
 
     render: function() {
         var jsonModel = this.model.toJSON();
         this.$el.html(this.template(jsonModel));
-        if (jsonModel.is_read) {
+        if (jsonModel.readed) {
             this.$el.addClass('read');
         }
         if (jsonModel.keep_unread) {
@@ -142,7 +142,7 @@ var StoryView = Backbone.View.extend({
     },
 
     itemRead: function() {
-        this.$el.toggleClass("read", this.model.get("is_read"));
+        this.$el.toggleClass("read", this.model.get("readed"));
     },
 
     itemOpened: function() {
@@ -168,7 +168,7 @@ var StoryView = Backbone.View.extend({
     },
 
     itemStarred: function() {
-        var icon = this.model.get("is_starred") ? "icon-star" : "icon-star-empty";
+        var icon = this.model.get("starred") ? "icon-star" : "icon-star-empty";
         this.$(".story-starred > i").attr("class", icon);
     },
 
@@ -177,7 +177,7 @@ var StoryView = Backbone.View.extend({
             var backgroundTab = window.open(this.model.get("permalink"));
             if (backgroundTab) backgroundTab.blur();
             window.focus();
-            if (!this.model.get("keep_unread")) this.model.set("is_read", true);
+            if (!this.model.get("keep_unread")) this.model.set("readed", true);
             if (this.model.shouldSave()) this.model.save();
         } else {
             this.model.toggle();
@@ -208,7 +208,7 @@ var StoryList = Backbone.Collection.extend({
     },
 
     unreadCount: function() {
-        return this.where({is_read: false}).length;
+        return this.where({readed: false}).length;
     },
 
     closeOthers: function(modelToSkip) {

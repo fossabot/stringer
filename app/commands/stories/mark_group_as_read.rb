@@ -14,9 +14,9 @@ class MarkGroupAsRead
     return unless @group_id
 
     if [KINDLING_GROUP_ID, SPARKS_GROUP_ID].include?(@group_id.to_i)
-      @repo.fetch_unread_by_timestamp(@timestamp).update_all(is_read: true)
+      @repo.fetch_unread_by_timestamp(@timestamp).update_all(readed: true)
     elsif @group_id.to_i > 0
-      @repo.fetch_unread_by_timestamp_and_group(@timestamp, @group_id).update_all(is_read: true)
+      @repo.fetch_unread_by_timestamp_and_group(@timestamp, @group_id).update_all(readed: true)
     end
   end
 end

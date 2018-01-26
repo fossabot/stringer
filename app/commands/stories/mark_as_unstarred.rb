@@ -7,6 +7,6 @@ class MarkAsUnstarred
   end
 
   def mark_as_unstarred
-    @repo.fetch(@story_id).update_attributes(is_starred: false)
+    @repo.fetch(@story_id).update_attributes(starred: false)
   end
 end

@@ -101,8 +101,8 @@ describe Story do
              title: 'Hello World!',
              body: 'Welcome!',
              permalink: 'https://example.com/blog/1',
-             is_starred: false,
-             is_read: true,
+             starred: false,
+             readed: true,
              published: Time.zone.local(2018, 1, 12, 18, 23, 0))
     end
 

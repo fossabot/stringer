@@ -6,8 +6,8 @@ FactoryBot.define do
     title { Faker::Lorem.sentence }
     permalink { Faker::Internet.url }
     body { Faker::Lorem.paragraph }
-    is_read false
-    is_starred false
+    readed false
+    starred false
     published { Time.zone.now }
   end
 end
@@ -32,8 +32,8 @@ end
 #         author: source,
 #         html: body,
 #         url: permalink,
-#         is_saved: is_starred ? 1 : 0,
-#         is_read: is_read ? 1 : 0,
+#         is_saved: starred ? 1 : 0,
+#         is_read: readed ? 1 : 0,
 #         created_on_time: published.to_i
 #       }
 #     end
@@ -46,8 +46,8 @@ end
 #       permalink: Faker::Internet.url,
 #       body: Faker::Lorem.paragraph,
 #       feed: FeedFactory.build,
-#       is_read: false,
-#       is_starred: false,
+#       readed: false,
+#       starred: false,
 #       published: Time.now
 #     }
 #     FakeStory.new(default_params.merge(params))

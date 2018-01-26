@@ -12,7 +12,7 @@ describe MarkGroupAsRead do
 
     it "marks group as read" do
       command = run_command(2)
-      expect(stories).to receive(:update_all).with(is_read: true)
+      expect(stories).to receive(:update_all).with(readed: true)
       expect(repo).to receive(:fetch_unread_by_timestamp_and_group).with(timestamp, 2).and_return(stories)
       command.mark_group_as_read
     end
@@ -26,7 +26,7 @@ describe MarkGroupAsRead do
 
     context "SPARKS_GROUP_ID and KINDLING_GROUP_ID" do
       before do
-        expect(stories).to receive(:update_all).with(is_read: true)
+        expect(stories).to receive(:update_all).with(readed: true)
         expect(repo).to receive(:fetch_unread_by_timestamp).and_return(stories)
       end
 
