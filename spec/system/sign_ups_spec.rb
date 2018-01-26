@@ -6,8 +6,8 @@ describe 'Sign ups' do
 
     expect {
       fill_in 'sign_up[email]', with: 'me@example.com'
-      fill_in 'sign_up[password]', with: 'password'
-      fill_in 'sign_up[password_confirmation]', with: 'password'
+      fill_in 'sign_up[password]', with: 'eidii7EeooVe8ahk'
+      fill_in 'sign_up[password_confirmation]', with: 'eidii7EeooVe8ahk'
       click_button 'Sign Up'
     }.to change(User, :count).by(1)
 
@@ -21,8 +21,8 @@ describe 'Sign ups' do
 
     expect {
       fill_in 'sign_up[email]', with: 'me@example.com'
-      fill_in 'sign_up[password]', with: 'password'
-      fill_in 'sign_up[password_confirmation]', with: 'password'
+      fill_in 'sign_up[password]', with: 'eidii7EeooVe8ahk'
+      fill_in 'sign_up[password_confirmation]', with: 'eidii7EeooVe8ahk'
       click_button 'Sign Up'
     }.not_to change(User, :count)
 
