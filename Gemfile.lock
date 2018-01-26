@@ -111,8 +111,8 @@ GEM
     dotenv-rails (2.2.1)
       dotenv (= 2.2.1)
       railties (>= 3.2, < 5.2)
-    email_address (0.1.7)
-      netaddr
+    email_address (0.1.8)
+      netaddr (~> 1.5.1)
       simpleidn
     erubi (1.7.0)
     execjs (2.7.0)
