@@ -45,4 +45,19 @@ describe 'Sign ups' do
 
     expect(page).to have_content("Password confirmation doesn't match Password")
   end
+
+  it 'when user try to sign ups with weak password' do
+    visit new_sign_up_path
+
+    expect {
+      fill_in 'sign_up[email]', with: 'me@example.com'
+      fill_in 'sign_up[password]', with: 'password'
+      fill_in 'sign_up[password_confirmation]', with: 'password'
+      click_button 'Sign Up'
+    }.not_to change(User, :count)
+
+    expect(current_path).to eq(sign_up_path)
+
+    expect(page).to have_content('Password is too weak')
+  end
 end
