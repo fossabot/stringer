@@ -5,6 +5,6 @@ class NewsController < ApplicationController
     @unread_stories = current_user.unreaded_stories
                                   .order(published: :desc)
                                   .includes(:feed)
-                                  .page(params[:page]).per(20)
+                                  .page(params[:page])
   end
 end

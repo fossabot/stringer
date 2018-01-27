@@ -5,6 +5,6 @@ class StarredNewsController < ApplicationController
     @starred_stories = current_user.starred_stories
                                    .includes(:feed)
                                    .order(published: :desc)
-                                   .page(params[:page]).per(20)
+                                   .page(params[:page])
   end
 end

@@ -11,6 +11,8 @@ describe User do
 
   it { should have_many(:unreaded_stories).conditions(readed: false).through(:feeds).source(:stories) }
 
+  it { should have_many(:readed_stories).conditions(readed: true).through(:feeds).source(:stories) }
+
   it { should have_many(:starred_stories).conditions(starred: true).through(:feeds).source(:stories) }
 
   it { should have_secure_password }

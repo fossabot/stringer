@@ -9,6 +9,10 @@ class User < ApplicationRecord
            through: :feeds,
            source: :stories
 
+  has_many :readed_stories, -> { where(readed: true) },
+           through: :feeds,
+           source: :stories
+
   has_many :starred_stories, -> { where(starred: true) },
            through: :feeds,
            source: :stories

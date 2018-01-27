@@ -2,10 +2,9 @@
 
 class ArchivedNewsController < ApplicationController
   def index
-    @read_stories = current_user.stories
-                                .where(readed: true)
+    @read_stories = current_user.readed_stories
                                 .includes(:feed)
                                 .order(published: :desc)
-                                .page(params[:page]).per(20)
+                                .page(params[:page])
   end
 end
