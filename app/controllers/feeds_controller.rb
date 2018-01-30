@@ -2,7 +2,7 @@
 
 class FeedsController < ApplicationController
   def index
-    @feeds = current_user.feeds.order("lower(name)")
+    @feeds = current_user.feeds.order(Arel.sql('LOWER(feeds.name)'))
   end
 
   def new
