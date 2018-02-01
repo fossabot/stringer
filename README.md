@@ -4,6 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/swanson/stringer.svg?style=flat)](https://codeclimate.com/github/swanson/stringer)
 [![Coverage Status](https://coveralls.io/repos/swanson/stringer/badge.svg?style=flat)](https://coveralls.io/r/swanson/stringer)
 [![Dependency Status](https://gemnasium.com/swanson/stringer.svg)](https://gemnasium.com/swanson/stringer)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbiow0lf%2Fstringer.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbiow0lf%2Fstringer?ref=badge_shield)
 
 ### A self-hosted, anti-social RSS reader.
 
@@ -152,3 +153,7 @@ If you have a question, feature idea, or are running into problems, our preferre
 Matt Swanson, [mdswanson.com](http://mdswanson.com), [@_swanson](http://twitter.com/_swanson)
 
 Victor Koronen, [victor.koronen.se](http://victor.koronen.se/), [@victorkoronen](https://twitter.com/victorkoronen)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbiow0lf%2Fstringer.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbiow0lf%2Fstringer?ref=badge_large)
